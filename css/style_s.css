@@ -533,6 +533,287 @@
     border-radius: 20px;
 }
 
+/* --------Pick挑選版面設定-------- */
+#main-content h2{
+    margin: 20px auto;
+    text-align: center;
+}
+.size_pic{
+    width: 820px;    
+    margin: 15px auto;
+}
+.size_pic img{
+    width: 100%;
+}
+@media (max-width:880px){
+    .size_pic{
+        width: 700px; 
+    }
+}
+@media (max-width:730px){
+    .size_pic{
+        width: 600px; 
+    }
+}
+@media (max-width:630px){
+    .size_pic{
+        width: 500px; 
+    }
+}
+@media (max-width:520px){
+    .size_pic{
+        width: 400px; 
+    }
+}
+
+/* ----3圖區塊設定---- */
+.features_box{
+    height: 320px;
+    padding: 10px;
+    display: flex;
+}
+.features_box > .pic_circle{
+    border-radius: 0;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); /*clip-path遮罩網站https://bennettfeely.com/clippy/*/
+    width: 33.33%;
+    height: 375px;
+    position: static;
+    left: 0;
+    bottom: 0;
+    transform: translate(0%, 0%);
+    box-shadow: none;
+    float: none;
+}
+@media (max-width:768px){
+    .features_box{
+        height: 900px;
+        margin-top: -20px;
+        display: block;
+    }
+    .features_box > .pic_circle{
+        width: 100%;
+        height: 33.33%;
+        border-radius: 20px;
+        clip-path: inset(0 0 0 0); /*重新設定4個角*/
+        margin-bottom: 20px;
+    }
+}
+/* --------Products所有產品版面設定-------- */
+#product_nav .material-icons{
+    right: -50px;
+    top: 8px;
+}
+.demobox{
+    width: 48%;
+    height: auto;
+    margin: 15px 5px;
+    padding: 10px 3px;
+}
+.demobox a div{
+    width: 100%;
+}
+@media (max-width: 875px){
+    #product_nav .material-icons{
+        right: -10px;
+    }
+}
+@media (max-width: 690px){
+    .left h5{
+        font-size: var(--h6);
+        margin: 0;    
+    }
+    #product_nav .material-icons{
+        right: 0;
+    }
+    .demobox{
+        width: 45%;
+    }
+}
+@media (max-width: 645px){
+    .left h5{
+        font-size: 14px;
+        margin: 0;    
+    }
+    #product_nav ul a{
+        width: 100%;
+        height: 35px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    #product_nav .material-icons{
+        right: 12px;
+    }
+    .demobox{
+        width: 100%;
+    }
+    .demobox a div{
+        height: 400px;
+        margin: 10px;
+    }
+}
+
+/* ----頁碼導覽設定---- */
+@media (max-width: 459px){
+    #nav_bar a{
+        width: 20px;
+        margin: 0 8px;
+    }
+    #nav_bar [class^="icon-"]{
+        font-size: var(--small);
+    }
+    #nav_bar a .icon_num{
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        margin: 0 3px;
+    }
+}
+
+/* --------News海邊生活版面設定-------- */
+#main-content h4{
+    text-align: center;
+}
+.latest{
+    width: 760px;
+    margin: 10px auto;
+}
+.newspost{
+    width: calc(50% - 15px);
+    margin: 0 15px;
+}
+.newspost_text{
+    width: 80%;
+}
+.news_personal{
+    width: calc(960px - 20px);
+    height: 430px;
+    margin: 0 auto;
+}
+.news_personalpost{
+    width: 30%;
+    height: 400px;
+}
+.newspost_title{
+    font-size: 16px;
+}
+
+/* 小文章：人物專訪、特別企劃 */
+.news_personal, .news_special{
+    width: 760px;
+    margin: 10px auto;
+}
+.news_personalpost_img img{
+    height: 180px;
+}
+.news_personalpost_text{
+    width: 82%;
+    height: 80px;
+    padding: 15px 0 0 20px;
+    font-size: var(--small);
+    line-height: 1.4; /*行高*/
+    text-align: justify;
+}
+@media (max-width: 770px){
+    .latest{
+        width: 500px;
+        height: auto;
+        display: block;
+    }
+    .newspost{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .news_personal, .news_special{
+        width: 500px;
+        height: auto;
+        display: block;
+    }
+    .news_personalpost{
+        width: 100%;
+        height: 500px;
+        margin: 20px auto;
+    }
+    .news_personalpost_img img{
+        height: 250px;
+    }
+    .news_personalpost_text{
+        width: 88%;
+        padding: 0;
+        margin: 15px auto;
+    }
+}
+@media (max-width: 530px){
+    .latest{
+        width: 430px;
+    }
+    .newspost{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .news_personal, .news_special{
+        width: 430px;
+    }
+}
+
+/* --------人物專訪版面設定-------- */
+.column img, figure img{
+    opacity: 1;
+    filter: grayscale(0);
+}
+#main-content .row .column{
+    height: auto;
+}
+#main-content .row .column .more{
+    bottom: -10px;
+}
+.row_more{
+    text-align: center;
+}
+@media (max-width: 640px){
+    #main-content .row{
+        display: block;
+        margin: 0 auto;
+    }
+    #main-content .row .column{
+        width: 45%;
+        height: auto;
+        flex: none;
+        float: left;
+        padding: 0 10px;
+    }
+    #main-content .row .column .more{
+        bottom: -10px;
+    }
+}
+
+/* 直式流動圖 */
+.column-count{
+    column-count: 2;
+}
+@media (max-width: 640px){
+    .column-count{
+        column-count: 1;
+    }
+}
+
+/* --------特別企劃版面設定-------- */
+.leftcolumn, .rightcolumn{
+    float: none;
+    width: 100%;
+}
+
+/* ----圖文區塊設定---- */
+.card{
+    padding: 15px;
+    margin: 15px;
+}
+.card h2{
+    text-align: center;
+}
+.rightcolumn .card p{
+    line-height: 1.3;
+}
+
 
 /* --------Stores版面設定-------- */
 .storepost{
@@ -614,19 +895,4 @@
         left: 25%;
     }
 }
-/* ----頁碼導覽設定---- */
-@media (max-width: 459px){
-    #nav_bar a{
-        width: 20px;
-        margin: 0 8px;
-    }
-    #nav_bar [class^="icon-"]{
-        font-size: var(--small);
-    }
-    #nav_bar a .icon_num{
-        width: 20px;
-        height: 20px;
-        line-height: 20px;
-        margin: 0 3px;
-    }
-}
+
