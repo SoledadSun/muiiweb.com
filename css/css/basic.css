@@ -1,0 +1,550 @@
+/*------設定變數-------*/
+:root{
+    /*------色彩命名------*/
+    --pink: #EFD6ECff;  /*顏色基本6位, 最後兩位代表透明度: 00表示全透明-ff表示完全不透明*/
+    --primary: rgb(140, 231, 249);
+    --secondary: #D4AD87ff;
+    --blue: #299BEEff;
+    --light: #E2F6FAff;
+    --red: #FF0000ff;
+    --info: #2F80EDff;
+    --success: #27AE60ff;
+    --warning: #E2B93Bff;
+    --error: #F17BA1ff;
+    --grey: #6F6F6Fff;
+    --black: #000000ff;
+    --spanish: #999999ff;
+    --gainsboro: #e0e0e0ff;
+    --white: #ffffffff;
+    --dark_grey: #515151ff;
+
+    /*------文字尺寸------*/
+    --h1: 30px;
+    --h2: 26px;
+    --h3: 24px;
+    --h4: 22px;
+    --h5: 20px;
+    --h6: 18px;
+    --normal: 16px;
+    --small: 14px;
+    --mini: 12px;
+
+    /*------間距基準------*/
+    --spacing1: 8px;
+    --spacing2: 16px;
+    --spacing3: 24px;
+    --spacing4: 32px;
+    --spacing5: 40px;
+    --spacing6: 56px;
+    --spacing7: 72px;
+    --spacing8: 80px;
+    --spacing9: 96px;
+    --spacing10: 120px;
+
+    /*------行高&字距基準------*/
+    --size_normal: 10px;
+    --size_basic: 0.1;
+}
+
+
+/*------------基本元件設定------------*/
+html, body{
+    font-family: "Nanum Gothic", "微軟正黑體", sans-serif;
+    color: var(--grey); /*用var(變數)設定, 更改上方變數設定後, 所有var都會同步更改*/
+    height: 100%;
+}
+a:link, a:active, a:visited{
+    color: var(--dark_grey);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--gainsboro);
+    text-decoration: underline;
+}
+
+/*------------常用元件設定------------*/
+.h1{ /*因為SEO關係, h1不用相同樣式, 採用class的方式*/
+    font-size: var(--h1);
+    font-weight: 800;  /*google font: Nanum Gothic這個font-family的祖體大小*/
+    line-height: calc(var(--size_basic)*25); /*即2.5倍的意思*/
+    margin: calc(var(--size_normal)*2) 0;
+}
+
+h2{
+    font-size: var(--h2);
+    font-weight: 800;
+    line-height: calc(var(--size_basic)*20);
+    text-transform: uppercase; /*大寫*/
+}
+
+h3{
+    font-size: var(--h3);
+    font-weight: 800;
+    line-height: calc(var(--size_basic)*20);
+    text-transform: uppercase;
+}
+
+h4{
+    font-size: var(--h4);
+    font-weight: 400; /*google font: Nanum Gothic這個font-family的正常大小*/
+    line-height: calc(var(--size_basic)*20);
+}
+
+h5{
+    font-size: var(--h5);
+    font-weight: 400;
+    line-height: calc(var(--size_basic)*20);
+}
+
+h6{
+    font-size: var(--h6);
+    font-weight: 400;
+    line-height: calc(var(--size_basic)*20);
+}
+
+p{
+    font-size: var(--normal);
+    line-height: calc(var(--size_basic)*13);
+}
+
+small{
+    font-size: var(--small);
+    line-height: calc(var(--size_basic)*11);
+}
+
+.overflow_hidden{
+    overflow: hidden;
+}
+
+/*--------顏色設定--------*/
+.color_primary{
+    color: var(--primary);
+}
+
+.color_secondary{
+    color: var(--secondary);
+}
+
+.color_dark_grey{
+    color: var(--dark_grey);
+}
+
+/*--------文字設定--------*/
+.font_size-50{
+    font-size: 50px;
+}
+
+.font_weight-bolder{
+    font-weight: bolder;
+}
+
+/*--------行高設定--------*/
+.line_height-15{
+    line-height: 15px;
+}
+
+.line_height-50{
+    line-height: 50px;
+}
+
+/*-------margin設定------*/
+.margin_top-50{
+    margin-top: 50px;
+}
+
+.margin_bottom-20{
+    margin: 20px;
+}
+
+.margin_v2{
+    margin-top: calc(var(--size_normal, 10px)*2);
+    margin-bottom: calc(var(--size_normal, 10px)*2);
+}
+
+.margin_v5{
+    margin-top: calc(var(--size_normal, 10px)*5);
+    margin-bottom: calc(var(--size_normal, 10px)*5);
+}
+
+/*-------padding設定------*/
+.padding_bottom-30{
+    padding-bottom: 30px;
+}
+
+.padding_v3{
+    padding-top: calc(var(--size_normal, 10px)*3);
+    padding-bottom: calc(var(--size_normal, 10px)*3);
+}
+
+/*------------位置設定------------*/
+
+.text_align-center{
+    text-align: center;
+}
+
+.text_align-justify{
+    text-align: justify;
+}
+
+/*--------浮動設定--------*/
+.float_left{
+    float: left;
+}
+
+.float_right{
+    float: right;
+}
+
+.float_none{
+    float: none;
+}
+
+.clear_both{
+    clear: both;
+}
+
+/*--------Position設定--------*/
+.position_absolute-bottom-20{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.position_relative{
+    position: relative;
+}
+
+/*--------Display設定--------*/
+.display_block{
+    display: block !important;
+}
+
+.display_inlineblock{
+    display: inline-block !important;
+}
+
+.display_inline{
+    display: inline !important;
+}
+
+/*--------邊框設定--------*/
+.border_radius-15{
+    border-radius: 15px;
+}
+
+.border_radius-30{
+    border-radius: 30px;
+}
+
+.border_radius-all{
+    border-radius: 100%;
+}
+
+/*--------首字放大--------*/
+.first-letter-effect::first-letter{
+    font-size: 200%;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+/*--------提示文字--------*/
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 80px;
+    background-color: var(--pink);
+    color: var(--grey);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 3px;
+    line-height: 1;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1000;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -50px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*--------作用文字--------*/
+.highlight_txt{
+    border-bottom: 3px solid var(--spanish);
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    color: var(--dark_grey) !important;
+}
+
+.active_txt{
+    padding: var(--size_normal, 10px);
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+.text_uppercase{
+    text-transform: uppercase;
+}
+
+.text_nocase{
+    text-transform: none; /*文字不要全部大寫*/
+}
+
+/*------------區塊樣式設定------------*/
+/*--------背景顏色設定--------*/
+.bg_black{
+    background-color: var(--black);
+}
+
+.bg_grey{
+    background-color: var(--grey);
+}
+
+.bg_spanish{
+    background-color: var(--spanish);
+}
+
+.bg_white{
+    background-color: var(--white);
+}
+
+.bg_pink{
+    background-color: var(--pink);
+}
+
+.bg_primary{
+    background-color: var(--primary);
+}
+
+.bg_blue{
+    background-color: var(--blue);
+}
+
+.bg_light{
+    background-color: var(--light);
+}
+
+/*--------漸層顏色設定--------*/
+
+/*--------分欄設定--------*/
+.column_count-1{
+    column-count: 1;
+}
+
+.column_count-2{
+    column-count: 2;
+}
+
+.column_count-3{
+    column-count: 3;
+}
+
+.column_count-4{
+    column-count: 4;
+}
+
+.column_count-5{
+    column-count: 5;
+}
+
+.column_gap-50{
+    column-gap: 50px;
+}
+
+.column_gap-40{
+    column-gap: 40px;
+}
+
+.column_gap-30{
+    column-gap: 30px;
+}
+
+.column_gap-20{
+    column-gap: 20px;
+}
+
+.column_gap-10{
+    column-gap: 10px;
+}
+
+.column_gap-0{
+    column-gap: 0;
+}
+
+.column_rule{
+    column-rule: 1px solid var(--spanish);
+}
+
+/*--------背景圖位置--------*/
+.bg_top{
+    background-position: top;
+}
+
+.bg_bottom{
+    background-position: bottom;
+}
+
+/*------------圖片效果設定------------*/
+.flip-img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.vertical_align-middle{
+    vertical-align: middle;
+}
+
+.vertical_align-bottom{
+    vertical-align: bottom;
+}
+
+.pic_width-350{
+    width: calc(var(--size_normal, 10px)*35);
+    height: auto;
+}
+
+.pic_transform{
+    transform: scale(1, 1);
+    transition: transform 0.4s linear;
+}
+
+.pic_transform:hover{
+    transform: scale(1.5, 1.5);
+    opacity: 0.6;
+    box-shadow: 0 0 10px 5px var(--grey, #545454ff);
+    z-index: 1000;      /*滑鼠經過的圖片置頂*/
+    position: relative; /*position要啟用, z-index才有作用*/
+}
+
+.pic_drop-shadow{
+    filter: drop-shadow(5px 5px 5px var(--grey, #545454ff));
+}
+
+/*------------組件樣式設定------------*/
+/*--------按鈕顏色--------*/
+.button_grey{
+    font-size: var(--size_normal, 16px);
+    font-weight: bolder;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--grey);
+}
+
+.button_grey:hover{
+    color: var(--grey);
+    background-color: var(--white);
+}
+
+.button_grey:active{
+    color: var(--white);
+    background-image: linear-gradient(var(--white)0%, var(--grey)150%);
+}
+
+.button_grey-gradient{
+    font-size: var(--size_normal, 16px);
+    font-weight: bolder;
+    text-align: center;
+    color: var(--white);
+    background-image: linear-gradient(var(--white)0%, var(--grey)150%);
+}
+
+.button_grey-gradient:hover,
+.button_grey-gradient:active{
+    background-image: linear-gradient(var(--grey)0%, var(--white)150%);
+}
+
+.button_primary{
+    font-size: var(--size_normal, 16px);
+    font-weight: bolder;
+    text-align: center;
+    color: var(--grey);
+    background-color: var(--primary);
+}
+
+.button_primary:hover{
+    color: var(--grey);
+    background-color: var(--light);
+}
+
+.button_primary:active{
+    color: var(--grey);
+    background-image: linear-gradient(var(--white)0%, var(--primary)150%);
+}
+
+.button_primary-gradient{
+    font-size: var(--size_normal);
+    font-weight: bolder;
+    text-align: center;
+    color: var(--grey);
+    background-image: linear-gradient(var(--white)0%, var(--primary)150%);
+}
+
+.button_primary-gradient:hover,
+.button_primary-gradient:active{
+    background-image: linear-gradient(var(--primary)0%, var(--white)150%);
+    filter: drop-shadow(1px 1px 5px var(--grey));
+}
+
+.button_disable{
+    color: var(--white);
+    background-color: var(--gainsboro);
+}
+
+/*--------按鈕尺寸--------*/
+.button_large{
+    width: calc(100% - 20px);
+    height: 30px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.button_medium{
+    width: calc(100% - 30px);
+    height: 30px;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.button_normal{
+    width: calc(100% - 40px);
+    height: 30px;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.button_small{
+    width: calc(100% - 50px);
+    height: 30px;
+    border-radius: 8px;
+    padding: 10px 25px;
+}
+
+.button_extra-small{
+    width: calc(100% - 40px);
+    height: 30px;
+    border-radius: 50%;
+    padding: 10px 20px;
+}
+
+.button_large:hover,
+.button_medium:hover,
+.button_normal:hover,
+.button_small:hover,
+.button_extra-small:hover{
+    box-shadow: 0 0 8px 0 var(--grey);
+}
+
+/*--------指標樣式--------*/
+.cursor_pointer{
+    cursor: pointer;
+}

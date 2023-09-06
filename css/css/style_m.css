@@ -1,0 +1,206 @@
+/* ------------------共用結構設定------------------ */
+/*  ---------------頁首頁尾設定--------------- */
+#header, #footer{
+    width: 960px;
+    padding: 0 10px;
+}
+#logo{
+    margin: 30px 0 0 30px;
+}
+#logo a{
+    width: 295px;
+    height: 200px;
+}
+.submenu{
+    margin-left: 15px;
+}
+.submenu a{
+    padding: 5px 8px 0 5px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+#copyright small{
+    font-size: 14px;
+}
+#small-logo{
+    padding-right: 10px;
+}
+/*  ---------------選單設定--------------- */
+#nav{
+    width: 680px;
+    padding-right: 20px;
+}
+#main-nav a{
+    margin-left: 15px;
+}
+
+/*  ---------------版面主結構--------------- */
+#main-content{
+    width: 960px;
+    padding: 0 10px;
+    margin: 30px auto;
+}
+
+/*  ---------------內頁版面設定--------------- */
+/* --------首頁設定-------- */
+.slogan{
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+    height: auto;
+    padding: 20px 15px;
+}
+.post{
+    width: 440px;
+    margin: 50px 20px;
+
+}
+.post img{
+    width: 430px;
+    height: 260px;
+}
+.post_text{
+    width: 400px;
+    height: 130px;
+    padding-bottom: 20px;    
+    overflow: hidden;
+    display: -webkit-box; /* 限制行數 */
+    text-overflow: ellipsis; /*延伸展開*/
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    white-space: normal;
+}
+.post .more{
+    margin-top: -60px;
+}
+.productbox{
+    width: calc(33% - 30px);
+}
+.productbox h6{
+    margin: 0 0 20px;
+    line-height: 1.2;
+}
+.productbox a div{
+    width: 230px;
+    height: 230px;
+}
+
+/* --------About版面設定-------- */
+/* ----Logo區塊設定---- */
+#mainpic{
+    width: 940px;
+    grid-template-rows: 50% 50%;
+    background-color: var(--piggy);
+    border: 8px solid var(--piggy);
+}
+.designer{
+    text-align: center;
+    margin: auto;
+    left: 16%;
+}
+#picshow a, #picshow a img{
+    width: 100%;
+    height: 315px;
+    padding: 0 3px;
+}
+
+/* --------Products所有產品版面設定-------- */
+#product_nav .material-icons{
+    right: -50px;
+    top: 8px;
+}
+.demobox{
+    width: 230px;
+    height: auto;
+    margin: 15px 5px;
+    padding: 10px 3px;
+}
+.demobox a div{
+    width: 100%;
+}
+
+/* --------Pick如何挑選版面設定-------- */
+.size_pic{
+    width: 920px;
+}
+.size_pic img{
+    width: 100%;
+    margin: 15px;
+}
+
+/* --------News海邊生活版面設定-------- */
+.latest{
+    width: calc(960px - 20px);
+}
+.newspost{
+    margin: 0 15px;
+}
+.newspost_text{
+    width: 380px;
+}
+.news_personal{
+    width: calc(960px - 20px);
+    height: 430px;
+    margin: 0 auto;
+}
+.news_personalpost{
+    width: 30%;
+    height: 400px;
+}
+.newspost_title{
+    font-size: 16px;
+}
+.news_personalpost_img img{
+    height: 180px;
+}
+.news_personalpost_text{
+    width: 230px;
+    height: 80px;
+    padding: 15px 0 0 20px;
+    font-size: var(--small);
+    line-height: 1.4; /*行高*/
+}
+/* ----news特別企劃設定---- */
+.news_special{
+    width: calc(960px - 20px);
+    margin: 0 auto;
+    height: 430px;
+}
+
+/* --------人物專訪版面設定-------- */
+#main-content .row .column .category{
+    font-size: 15px;
+}
+.row_more {
+    margin-top: -18px;
+    text-align: center;
+}
+/* ----圖片overlay覆蓋文字設定---- */
+.text{
+    font-size: var(--h6);
+}
+
+/* --------News特別企劃版面設定-------- */
+.card h2, .card h5{
+    text-align: center;
+}
+.rightcolumn .card p{
+    line-height: 1.3;
+}
+
+/* --------Stores版面設定-------- */
+.store_pic{
+    width: 30%;
+    margin-left: 10px;
+}
+
+.store_pic img{
+    height: 100%;
+    width: auto;
+}
+
+.store_txt{
+    width: 70%;
+    margin: 0 -10px;
+    padding: 0 30px;
+}

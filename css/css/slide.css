@@ -1,0 +1,124 @@
+/* -------banner外框架設定------- */
+.slide-carousel{
+    width: 100%;
+    height: 540px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* -----slide設定----- */
+.item-list, .item-content, .item-content a{
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+.item-list{
+    display: flex;
+    justify-items: flex-end;
+    align-items: contain;
+}
+
+.item-list li{
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+}
+
+/* -----圖片位置設定----- */
+.item-list .item0{
+    transform: translateX(-100%); /*最左邊的位置*/
+}
+.item-list .item1{
+    transform: translateX(0);
+}
+.item-list .item2{
+    transform: translateX(100%);
+}
+.item-list .item3{
+    transform: translateX(200%);
+}
+
+/* -----indicator設定----- */
+.indicator-list{
+    position: absolute;
+    bottom: 17px;
+    left: calc((100% - 98px) / 2);
+    z-index: 999;
+}
+.indicator-list a{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 3px solid var(--white);
+    border-radius: 50%;
+    background-color: var(--gainsboro);
+    margin-left: 5px;
+}
+.indicator-list a:hover{
+    background-color: var(--primary);
+    box-shadow: 0 0 8px 3px var(--white);
+}
+.indicator-list a.selected{
+    border-color: var(--primary);
+    background-color: var(--info);
+    box-shadow: 0 0 5px 2px var(--light);
+}
+
+/* -----desc設定(黑色區塊)----- */
+/* .desc{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+} */
+
+/* -----control設定----- */
+.slide-carousel .control{
+    opacity: 0;
+}
+
+.slide-carousel:hover .control{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.slide-carousel .control a{
+    width: 40px;
+    height: 60px;
+    background-color: rgba(255,255,255,.2);
+    font-size: 35px;
+    padding-top: 25px;
+    text-decoration: none;
+}
+.slide-carousel .control a:hover{
+    background-color: rgba(255,255,255,.6);
+}
+.slide-carousel .control .icon-chevron_left, .slide-carousel .control .icon-chevron_right{
+    position: absolute;
+    color: var(--gainsboro);
+    top: calc((100% - 143px) / 2);
+}
+.slide-carousel .control .icon-chevron_left{
+    left: 10px;
+}
+.slide-carousel .control .icon-chevron_right{
+    right: 10px;
+}
+
+/* -----自訂圖標----- */
+/* @font-face {
+    font-family: "Glyphicons Halfings";
+    src: url(../fonts/);
+}
+.glyphicon{
+    font-family: "Glyphicons Halfings";
+    display: inline-block;
+    line-height: 1;
+}
+.glyphicon-menu-left::before{
+    content: "\e257";
+}
+.glyphicon-menu-right::before{
+    content: "\e258";
+} */
