@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
+        <meta name="author" content="Soledad, jennysun6691@gmail.com">
+        <!--viewport屬性說明參考資料: https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag#viewport_basics-->
+        <title>Muii Swim | Muii Seaside-Interviews</title>
+
+        <!-- 網路字型 -->
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+        <!-- 網站小圖示(頁籤上) -->
+        <link rel="icon" href="images/Muii_logo.jpg">
+        <!-- 加入手機主畫面捷徑圖示 -->
+        <link rel="apple-touch-icon" href="images/Muii_logo.jpg"> <!-- 建議512*512 -->
+
+        <!-- Google圖標 -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- 自訂圖標 -->
+        <link rel="stylesheet" href="css/iconstyle.css" rel="stylesheet">
+
+        <!-- 歸零CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- 變數設定CSS -->
+        <link rel="stylesheet" href="css/basic.css">
+        <!-- 版面CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- 媒體查詢 -->
+	<link rel="stylesheet" href="css/style_m.css" media="(min-width: 980px) and (max-width: 1239px)">
+	<link rel="stylesheet" href="css/style_s.css" media="(max-width: 979px)">
+
+        <!-- JQ載入 -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+        <!-- gotop JS -->
+        <script src="js/gotop.js"></script>   
+</head>
+
+<body>
+        <!-- 不會改變的資料都用id -->
+        <div class="special"><span>2023超集中比基尼推薦，Muiiswim專為亞洲女生設計</span></div>
+        <div id="header">
+             
+             <div id="logo">
+             <h1 title="Go back to Homepage"><span>Muii Swim</span><a href="index.html"></a></h1>
+             </div>
+
+             <div id="nav">
+                  <!-- 上層固定選單 -->
+                  <nav id="top-nav">
+                        <ul>
+                            <li><a href="#0"><span class="icon-cart" title="shopping car"></span></a></li>
+                            <li><a href="#0"><span class="icon-account" title="membership"></span></a></li>
+                            <li><a href="#0"><span class="icon-search" title="search"></span></a></li>
+                        </ul>
+                   </nav>
+                   
+                   <nav id="main-nav">
+						<!-- 漢堡選單 -->
+						<input type="checkbox" class="toggler">
+						<div class="hamburger"> <!--漢堡三條線-->
+							<div></div>
+						</div>  
+                        <!-- 主選單 -->
+						<div class="menu">
+							<div>
+								<div>
+									<ul>
+										<li><a href="about.html">關於我們</a></li>
+										<li><a href="products.html">所有商品</a></li>
+										<li><a href="pick.html">如何挑選</a></li>
+										<li><a href="news.html" class="highlight_txt">海邊生活<span class="material-icons">expand_more</span></a>
+											<ul>
+												<li><a href="news_person.html" class="highlight_txt">人物專訪</a></li>
+												<li><a href="news_special.html">特別企劃</a></li>
+											</ul>
+										<li><a href="stores.html">分店門市</a></li>
+
+
+                                                                        										<!-- SNS選單 -->
+                                                                                <p id="nav-sns">
+                                                                                        <a href="https://www.facebook.com/muiiswim/?locale=zh_TW" target="_blank"><span class="icon-facebook"></span></a>
+                                                                                        <a href="https://www.instagram.com/muiiswim/" target="_blank"><span class="icon-instagram-150"></span></a>
+                                                                                        <a href="#" target="_blank"><span class="icon-linkedin-150"></span></a>
+                                                                                        <a href="https://mail.google.com/" target="_blank"><span class="icon-gmail"></span></a>
+                                                                                </p>									
+                                                                        </ul>
+								</div>
+							</div>
+						</div>
+                  </nav>
+             </div>
+        </div>
+
+        <!-- 橫版大圖區塊 -->
+        <div class="hero-image" style="background-image: linear-gradient(rgba(175, 175, 175, 0.3), rgba(78, 78, 78, 0.5)) , url(images/yoga.jpg);">
+                <div class="hero-text">
+                        <h1 class="font_size-50 line_height-15 font_weight-bolder text_uppercase">Interviews</h1>
+                        <h3 class="margin_top-50">
+                            <a href="news.html" class="text_uppercase font_weight-bolder">海邊生活</a>
+                            <i class="material-icons">keyboard_arrow_right</i>人物專訪
+                        </h3>
+                </div>
+        </div>
+        
+        <!-- 內容區塊 -->
+        <div id="main-content">
+               <!-- 圖文分欄 -->
+               <h2 class="color_dark_grey">Muii 好夥伴</h2>
+
+               <div class="row">
+                        <div class="column">
+                                <a href="#0"><img src="images/seaside4_banner.png" alt="" title="Click to see more"></a>
+                                <p class="category">在LABTEX看見muiiswim另種固執</p>
+                                <p class="collaps_text">muiiswim設計師說：「針對使用者做設計是我的初衷，如果今天對象是一個跆拳道選手，我也希望製作她穿著最舒適的機能服。」有著在衝浪界裡最糾結比基尼設計的女性比基尼品牌muiiswim，穿比基尼不只是時尚，更是</p>
+                                <div class="more"><a href="#0">Read More<i class="material-icons">double_arrow</i></a></div>
+                        </div>
+                        <div class="column">
+                                <a href="#0"><img src="images/seaside7.jpg" alt="" title="Click to see more"></a>
+                                <p class="category">用瑜珈打滾在戶外的野女孩－瑪G</p>
+                                <p class="collaps_text">在大學讀休閒相關科系的瑪G本來就是一個喜歡戶外的女孩。在這個時期，她接觸了各式各樣的戶外運動，從風浪板到攀岩再到瑜珈，只要可以跟戶外扯上邊的活動就會列入她的興趣清單中，而這半學期的瑜珈影響了她的生活方式</p>
+                                <div class="more"><a href="#0">Read More<i class="material-icons">double_arrow</i></a></div>
+                        </div>
+                        <div class="column">
+                                <a href="#0"><img src="images/seaside1.png" alt="" title="Click to see more"></a>
+                                <p class="category">自潛女神-米希帶你進入潛水的世界</p>
+                                <p class="collaps_text">自由潛水的自在感令人著迷，米希有著說走就走的瀟灑，想念水時只有戴上蛙鞋就可以隨時來一趟湛藍之旅。每當心情不好或壓力大的時候，總是會想要「躲」會水中，對她來說，「水」就是一個自在且抒壓的地方，可以讓她自由自在</p>
+                                <div class="more"><a href="#0">Read More<i class="material-icons">double_arrow</i></a></div>
+                        </div>
+                        <div class="column">
+                                <a href="#0"><img src="images/seaside3.jpg" alt="" title="Click to see more"></a>
+                                <p class="category">離岸生活-體驗BoatLife航海生活</p>
+                                <p class="collaps_text">不管是喜歡旅遊的你，還是熱愛大海的你，一定知道2020爆紅的龜山島旅遊，或是聽過離岸生活工作室。當龜山島旅遊加上離岸生活工作室，所觸發的化學效應無法用公式計算，只能去感受每一道光線，海浪的每次拍打伴隨著</p>
+                                <div class="more"><a href="#0">Read More<i class="material-icons">double_arrow</i></a></div>
+                        </div>
+                </div>
+               <div class="row_more"><a href="#0" title="click to see more articles">More Articles...<i class="material-icons"><span class="material-icons-outlined">
+                keyboard_double_arrow_down
+                </span></i></a></div>
+
+               <!-- 大圖+圖說文字 -->
+               <figure>
+                <img src="images/index3.jpg" alt="">
+                <figcaption>不分角色，在水裡我們都一樣享受美好、自由，並用心傾聽來自海洋的鼓勵＼Have a whale of a time／</figcaption>
+               </figure>
+
+               <!-- 圖文流水區+SNS推廣 -->
+               <h2 class="color_dark_grey margin_bottom-20">Muii 最新消息</h2>
+               <div class="sns_show column_count-3 column_gap-0">
+                <div class="container">
+                        <img src="images/sns_show1.png" alt="" class="content_box">
+                        <div class="overlay">
+                                <a href="https://www.instagram.com/p/Cvw8Bd5vYSu/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" title="click to view detail">
+                                        <div class="text">來趟說走就走的海邊水上活動旅行<br>要帶幾套泳衣呢？</div>
+                                </a>
+                        </div>
+                </div>
+
+                <div class="container">
+                        <img src="images/sns_show3.png" alt="" class="content_box">
+                        <div class="overlay">
+                                <a href="https://www.instagram.com/p/CvcJ4ZPPWX6/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" title="click to view detail">
+                                        <div class="text">海邊女子|吉鵝老師<br>住在海邊更relaxing！<br>Enjoy your life!</div>
+                                </a>
+                        </div>
+                </div>
+
+                <div class="container">
+                        <img src="images/sns_show8.png" alt="" class="content_box">
+                        <div class="overlay">
+                                <a href="https://www.instagram.com/p/CuN_LxLSSpw/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" title="click to view detail">
+                                        <div class="text">放暑假囉～<br>夏日派對怎麼能少了美胸型海鷗丁連身！</div>
+                                </a>
+                        </div>
+                </div>
+
+                <div class="container">
+                        <img src="images/sns_show4.png" alt="" class="content_box">
+                        <div class="overlay">
+                                <a href="https://www.instagram.com/p/CvE0Rm1yUVa/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" title="click to view detail">
+                                        <div class="text">muii X 普魯士藍<br>水下最美的長腿組合</div>
+                                </a>
+                        </div>
+                </div>
+
+                <div class="container">
+                        <img src="images/sns_show5.png" alt="" class="content_box">
+                        <div class="overlay">
+                                <a href="https://www.instagram.com/p/CvE0Rm1yUVa/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" title="click to view detail">
+                                        <div class="text">muii X 普魯士藍<br>深吸一口氣—<br>躬身潛入海裏的女孩</div>
+                                </a>
+                        </div>
+                </div>
+
+                <div class="container">
+                        <img src="images/sns_show7.png" alt="" class="content_box">
+                        <div class="overlay">
+                                <a href="https://www.instagram.com/p/Cu1byQMPTnk/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" title="click to view detail">
+                                        <div class="text">{中腰復古甜挖臀褲}<br>Muiiswim最新褲款<br>｜安全感100%｜</div>
+                                </a>
+                        </div>
+                </div>
+
+                <div class="container">
+                        <img src="images/sns_show6.png" alt="" class="content_box">
+                        <div class="overlay">
+                                <a href="https://www.instagram.com/p/CvcG0W5v8Hz/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" title="click to view detail">
+                                        <div class="text">{PAW 平口美胸上衣}<br>Muiiswim最新版型<br>|全手工剪裁|</div>
+                                </a>
+                        </div>
+                </div>
+
+                <div class="container">
+                        <img src="images/sns_show9.png" alt="" class="content_box">
+                        <div class="overlay">
+                                <a href="https://www.instagram.com/p/CtfjkBqPr7I/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" title="click to view detail">
+                                        <div class="text">宜蘭頭城門市<br>夏季營業時間公告</div>
+                                </a>
+                        </div>
+                </div>
+
+                <div class="container">
+                        <img src="images/sns_show2.png" alt="" class="content_box">
+                        <div class="overlay">
+                                <a href="https://www.instagram.com/p/CvtXkmRSk1r/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" title="click to view detail">
+                                        <div class="text">官網全站任選兩件9折<br>滿5000元送500元購物金(下一筆使用)</div>
+                                </a>
+                        </div>
+                </div>
+               </div>
+
+        </div>    
+
+        <!-- 頁尾區塊 -->
+        <div id="footer">
+                <!-- logo區域 -->
+                <div id="small-logo"><img src="images/Muii_logo.jpg" alt=""></div>
+                <div id="copyright">
+                        <small>海邊生活工作室<br>聯絡地址：宜蘭縣頭城鎮開蘭東路32號</small>
+                </div>
+
+                <!-- 社群超連結&icon -->
+                <div id="sns">
+                        <a href="https://www.facebook.com/muiiswim/?locale=zh_TW" target="_blank"><span class="icon-facebook"></span></a>
+                        <a href="https://www.instagram.com/muiiswim/" target="_blank"><span class="icon-instagram-150"></span></a>
+                        <a href="#" target="_blank"><span class="icon-linkedin-150"></span></a>
+                        <a href="https://mail.google.com/" target="_blank"><span class="icon-gmail"></span></a>
+                </div>
+
+                <!-- 退換貨政策 -->
+                <div class="submenu">
+                        <ul>
+                                <li><a href="#">退換貨政策</a></li>
+                                <li><a href="#">出貨及付款</a></li>
+                                <li><a href="#">隱私權政策</a></li>
+                                <li><a href="#">常見Q&A</a></li>
+                                <li><a href="#">會員政策</a></li>
+                        </ul>
+                </div>
+
+        </div>
+        <!-- 置頂button -->
+        <div id="gotop">
+                <span class="material-icons">arrow_circle_up</span>
+                <span class="gotip">Go Back To Top</span>
+        </div>
+
+</body>
+
+</html>
