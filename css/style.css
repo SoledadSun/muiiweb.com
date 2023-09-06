@@ -1123,6 +1123,9 @@
     font-size: 16px !important;
     transform: translate(45%, 25%);
 }
+.column-count{
+    column-count: 3;
+}
 
 /* ----news特別企劃設定---- */
 .news_special{
