@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
+        <meta name="author" content="Soledad, jennysun6691@gmail.com">
+        <!--viewport屬性說明參考資料: https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag#viewport_basics-->
+        <title>Welcome to Muii Swim</title>
+
+        <!-- 網路字型 -->
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+        <!-- 網站小圖示(頁籤上) -->
+        <link rel="icon" href="images/Muii_logo.jpg">
+        <!-- 加入手機主畫面捷徑圖示 -->
+        <link rel="apple-touch-icon" href="images/Muii_logo.jpg"> <!-- 建議512*512 -->
+
+        <!-- Google圖標 -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- 自訂圖標 -->
+        <link rel="stylesheet" href="css/iconstyle.css" rel="stylesheet">
+        
+        <!-- 歸零CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- 變數設定CSS -->
+        <link rel="stylesheet" href="css/basic.css">
+        <!-- 版面CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- 橫幅輪播CSS -->
+        <link rel="stylesheet" href="css/slide.css">
+
+        <!-- 媒體查詢 -->
+	<link rel="stylesheet" href="css/style_m.css" media="(min-width: 980px) and (max-width: 1239px)">
+	<link rel="stylesheet" href="css/style_s.css" media="(max-width: 979px)">
+
+        <!-- JQ載入 -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+        <!-- 橫幅輪播 JS -->
+        <script src="js/slide.min.js"></script>
+
+        <!-- gotop JS -->
+        <script src="js/gotop.js"></script>
+        
+</head>
+
+<body>
+        <!-- 不會改變的資料都用id -->
+        <div class="special"><span>2023超集中比基尼推薦，Muiiswim專為亞洲女生設計</span></div>
+        <div id="header">
+             
+             <div id="logo">
+             <h1 title="Go back to Homepage"><span>Muii Swim</span><a href="index.html"></a></h1>
+             </div>
+
+             <div id="nav">
+                  <!-- 上層固定選單 -->
+                  <nav id="top-nav">
+                        <ul>
+                            <li><a href="#0"><span class="icon-cart" title="shopping car"></span></a></li>
+                            <li><a href="#0"><span class="icon-account" title="membership"></span></a></li>
+                            <li><a href="#0"><span class="icon-search" title="search"></span></a></li>
+                        </ul>
+                   </nav>
+                   
+                   <nav id="main-nav">
+						<!-- 漢堡選單 -->
+						<input type="checkbox" class="toggler">
+						<div class="hamburger"> <!--漢堡三條線-->
+							<div></div>
+						</div>
+                        <!-- 主選單 -->
+						<div class="menu">
+							<div>
+								<div>
+									<ul>
+										<li><a href="about.html">關於我們</a></li>
+										<li><a href="products.html">所有商品</a></li>
+										<li><a href="pick.html">如何挑選</a></li>
+										<li><a href="news.html">海邊生活<span class="material-icons">expand_more</span></a>
+											<ul>
+												<li><a href="news_person.html">人物專訪</a></li>
+												<li><a href="news_special.html">特別企劃</a></li>
+											</ul>
+										<li><a href="stores.html">分店門市</a></li>
+
+										<!-- SNS選單 -->
+										<p id="nav-sns">
+											<a href="https://www.facebook.com/muiiswim/?locale=zh_TW" target="_blank"><span class="icon-facebook"></span></a>
+											<a href="https://www.instagram.com/muiiswim/" target="_blank"><span class="icon-instagram-150"></span></a>
+											<a href="#" target="_blank"><span class="icon-linkedin-150"></span></a>
+											<a href="https://mail.google.com/" target="_blank"><span class="icon-gmail"></span></a>
+										</p>
+									</ul>
+								</div>
+							</div>
+						</div>
+                  </nav>
+             </div>
+        </div>
+
+        <div id="banner">
+                <div id="slide2d" class="slide-carousel slide-2d">
+                        <ul class="item-list">
+                                <li class="item0">
+                                        <div class="item-content">
+                                                <a href="#0">                
+                                                        <picture>
+                                                        <!-- [RWD]媒體查詢:依顯示器大小偵測要放入的圖片 -->
+                                                        <source media="(min-width:768px) and (max-width:959px)" srcset="images/index9.jpg"> <!--平板-->
+                                                        <source media="(max-width:767px)" srcset="images/index9.jpg"> <!--手機-->
+                                                        <img src="images/index9.jpg" alt="Muii Swim">
+                                                        </picture>
+                                                </a>
+                                        </div>
+                                </li>
+
+                                <li class="item1">
+                                        <div class="item-content">
+                                                <a href="#0">                
+                                                        <picture>
+                                                        <source media="(min-width:768px) and (max-width:959px)" srcset="images/index3.jpg"> <!--平板-->
+                                                        <source media="(max-width:767px)" srcset="images/index3.jpg"> <!--手機-->
+                                                        <img src="images/index3.jpg" alt="Muii Swim">
+                                                        </picture>
+                                                </a>
+                                        </div>
+                                </li>
+
+                                <li class="item2">
+                                        <div class="item-content">
+                                                <a href="#0">                
+                                                        <picture>
+                                                        <source media="(min-width:768px) and (max-width:959px)" srcset="images/index7.jpg"> <!--平板-->
+                                                        <source media="(max-width:767px)" srcset="images/index7.jpg"> <!--手機-->
+                                                        <img src="images/index7.jpg" alt="Muii Swim">
+                                                        </picture>
+                                                </a>
+                                        </div>
+                                </li>
+
+                                <li class="item3">
+                                        <div class="item-content">
+                                                <a href="#0">                
+                                                        <picture>
+                                                        <source media="(min-width:768px) and (max-width:959px)" srcset="images/index8.jpg"> <!--平板-->
+                                                        <source media="(max-width:767px)" srcset="images/index8.jpg"> <!--手機-->
+                                                        <img src="images/index8.jpg" alt="Muii Swim">
+                                                        </picture>
+                                                </a>
+                                        </div>
+                                </li>
+                        </ul>
+                        <!-- 指示圓點小圖示 -->
+                        <div class="indicator-list">
+                                <a href="#0" data-slide-index="0" class="selected"></a>
+                                <a href="#0" data-slide-index="1"></a>
+                                <a href="#0" data-slide-index="2"></a>
+                                <a href="#0" data-slide-index="3"></a>
+                        </div>
+                        <!-- 左右控制箭頭 -->
+                        <div class="control">
+                                <a href="#0" class="icon-chevron_left" glyphicon glyphicon-menu-left></a>
+                                <a href="#0" class="icon-chevron_right" glyphicon glyphicon-menu-right></a>
+                        </div>
+                        <!-- 下方黑色區塊 -->
+                        <div class="desc"></div>
+                </div>
+            </div>
+        
+        <div id="main-content">
+                <h2 class="color_dark_grey text_align-center margin_bottom-20">Muii Swim</h2>
+                <div class="slogan">
+                        <h2>WHO ARE WE?</h2>
+                        <p>muii源自希臘字母 的水”μ“及代表人的”ii“。<br>
+                        <p>生命源自於海，每個人都能以最美的姿態重新與海洋相遇。<br>
+                        <p>我們從一開始為專業衝浪選手量身設計比基尼；<br>
+                        <p>針對亞洲女性體型以獨家專利結構設計出<br>
+                        <span style="font-weight: 700; color:#515151;">安全、舒適</span>及<span style="font-weight: 700; color:#515151;">穩定</span>的專業海洋運動服飾。</p>
+                        <p>堅持如量身訂製般的高標準，<br>
+                        讓每一件泳裝都能符合衝浪等專業運動需求，<br>
+                        <b style="color:#515151;">呈現最完美的妳！</b></p>
+                </div> 
+
+                <div class="post">
+                        <div class="post_title">兩件式泳裝</div>
+                        <div class="post_img"><a href="products.html"><img src="images/product8_banner.png" alt=""></a></div>
+                        <div class="post_text">喜歡美胸上衣的經典三角杯，但又不想要繩結在背後嗎？美胸上衣出了無綁帶款式啦！適合夏日戲水與洋裝內搭的泳衣...</div>
+                        <div class="more"><a href="products.html">View More...<i class="material-icons">double_arrow</i></a></div>
+                </div>
+                
+                <div class="post">
+                        <div class="post_title">連身泳裝</div>
+                        <div class="post_img"><a href="products.html"><img src="images/product9_banner.png" alt=""></a></div>
+                        <div class="post_text">夏天到了去海邊玩是必要行程，怎麼能少了比基尼呢！支撐力：集中托高已經是必需的了，所以好的比基尼支撐力真的很重要<br>包覆性：包覆性不好讓玩水的時候不自在...</div>
+                        <div class="more"><a href="products.html">View More...<i class="material-icons">double_arrow</i></a></div>
+                </div>
+        </div>
+
+
+        <div id="movie">
+                <iframe src="https://www.youtube.com/embed/QCvyWA11HVY" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay;"></iframe>
+        </div>
+
+        <!-- 產品區域 -->
+        <div class="product_list">
+                <h5 class="color_dark_grey text_align-center">Product｜商品系列</h5>
+                <div class="productbox">
+                    <h6>{霧藍}Spi運動導流上衣</h6>
+                    <a href="product_single.html">
+                        <div class="bg_top" style="background-image:url(images/product2-1.png)"></div>
+                    </a>
+                    <p class="margin_v2">
+                        <span class="material-icons">arrow_right</span>無綁帶調整式結構<br>
+                        <span class="material-icons">arrow_right</span>肩帶雙繩減壓設計<br>
+                        <span class="material-icons">arrow_right</span>可替換式內襯插墊</p>
+                    <a href="product_single.html" class="more">View More<i class="material-icons">double_arrow</i></a>
+                </div>
+
+                <div class="productbox">
+                        <h6>{霧藍}Spi運動導流上衣</h6>
+                        <a href="product_single.html">
+                            <div class="bg_top" style="background-image:url(images/product2-2.png)"></div>
+                        </a>
+                        <p class="margin_v2">
+                            <span class="material-icons">arrow_right</span>無綁帶調整式結構<br>
+                            <span class="material-icons">arrow_right</span>肩帶雙繩減壓設計<br>
+                            <span class="material-icons">arrow_right</span>可替換式內襯插墊</p>
+                        <a href="product_single.html" class="more">View More<i class="material-icons">double_arrow</i></a>
+                    </div>
+
+                    <div class="productbox">
+                        <h6>{墨綠}Spi運動導流上衣</h6>
+                        <a href="product_single.html">
+                            <div class="bg_top" style="background-image:url(images/product3.png)"></div>
+                        </a>
+                        <p class="margin_v2">
+                            <span class="material-icons">arrow_right</span>無綁帶調整式結構<br>
+                            <span class="material-icons">arrow_right</span>肩帶雙繩減壓設計<br>
+                            <span class="material-icons">arrow_right</span>可替換式內襯插墊</p>
+                        <a href="product_single.html" class="more">View More<i class="material-icons">double_arrow</i></a>
+                    </div>
+
+                    <div class="productbox">
+                        <h6>{海上花}美胸上衣</h6>
+                        <a href="product_single.html">
+                            <div class="bg_top" style="background-image:url(images/product4.png)"></div>
+                        </a>
+                        <p class="margin_v2">
+                            <span class="material-icons">arrow_right</span>無綁帶調整式結構<br>
+                            <span class="material-icons">arrow_right</span>肩帶雙繩減壓設計<br>
+                            <span class="material-icons">arrow_right</span>可替換式內襯插墊</p>
+                        <a href="product_single.html" class="more">View More<i class="material-icons">double_arrow</i></a>
+                    </div>
+
+                    <div class="productbox">
+                        <h6>{深海藍}平口上衣</h6>
+                        <a href="product_single.html">
+                            <div class="bg_top" style="background-image:url(images/product5.png)"></div>
+                        </a>
+                        <p class="margin_v2">
+                            <span class="material-icons">arrow_right</span>無綁帶調整式結構<br>
+                            <span class="material-icons">arrow_right</span>肩帶雙繩減壓設計<br>
+                            <span class="material-icons">arrow_right</span>可替換式內襯插墊</p>
+                        <a href="product_single.html" class="more">View More<i class="material-icons">double_arrow</i></a>
+                    </div>
+
+                    <div class="productbox">
+                        <h6>{焦糖橘}Spi運動導流上衣</h6>
+                        <a href="product_single.html">
+                            <div class="bg_top" style="background-image:url(images/product6.png)"></div>
+                        </a>
+                        <p class="margin_v2">
+                            <span class="material-icons">arrow_right</span>無綁帶調整式結構<br>
+                            <span class="material-icons">arrow_right</span>肩帶雙繩減壓設計<br>
+                            <span class="material-icons">arrow_right</span>可替換式內襯插墊</p>
+                        <a href="product_single.html" class="more">View More<i class="material-icons">double_arrow</i></a>
+                    </div>
+
+                    <div class="productbox">
+                        <h6>{勃根地紅}美胸上衣</h6>
+                        <a href="product_single.html">
+                            <div class="bg_top" style="background-image:url(images/product7.png)"></div>
+                        </a>
+                        <p class="margin_v2">
+                            <span class="material-icons">arrow_right</span>無綁帶調整式結構<br>
+                            <span class="material-icons">arrow_right</span>肩帶雙繩減壓設計<br>
+                            <span class="material-icons">arrow_right</span>可替換式內襯插墊</p>
+                        <a href="product_single.html" class="more">View More<i class="material-icons">double_arrow</i></a>
+                    </div>
+
+                    <div class="productbox">
+                        <h6>{墨綠}平口上衣</h6>
+                        <a href="product_single.html">
+                            <div class="bg_top" style="background-image:url(images/product8.png)"></div>
+                        </a>
+                        <p class="margin_v2">
+                            <span class="material-icons">arrow_right</span>無綁帶調整式結構<br>
+                            <span class="material-icons">arrow_right</span>肩帶雙繩減壓設計<br>
+                            <span class="material-icons">arrow_right</span>可替換式內襯插墊</p>
+                        <a href="product_single.html" class="more">View More<i class="material-icons">double_arrow</i></a>
+                    </div>
+
+                    <!-- more按鈕 -->
+                    <button>See more</button>
+        </div>
+
+        <div id="footer">
+                <!-- logo區域 -->
+                <div id="small-logo"><img src="images/Muii_logo.jpg" alt=""></div>
+                <div id="copyright" v-cloak>
+                        <small>{{ company }}<br>聯絡地址：宜蘭縣頭城鎮開蘭東路32號</small>
+                        <p>{{ company }}</p>
+                </div>
+
+                <!-- 社群超連結&icon -->
+                <div id="sns">
+                        <a href="https://www.facebook.com/muiiswim/?locale=zh_TW" target="_blank"><span class="icon-facebook"></span></a>
+                        <a href="https://www.instagram.com/muiiswim/" target="_blank"><span class="icon-instagram-150"></span></a>
+                        <a href="#" target="_blank"><span class="icon-linkedin-150"></span></a>
+                        <a href="https://mail.google.com/" target="_blank"><span class="icon-gmail"></span></a>
+                </div>
+
+                <!-- 退換貨政策 -->
+                <div class="submenu">
+                        <ul>
+                                <li><a href="#">退換貨政策</a></li>
+                                <li><a href="#">出貨及付款</a></li>
+                                <li><a href="#">隱私權政策</a></li>
+                                <li><a href="#">常見Q&A</a></li>
+                                <li><a href="#">會員政策</a></li>
+                        </ul>
+                </div>
+
+        </div>
+        <!-- 置頂button -->
+        <div id="gotop">
+                <span class="material-icons">arrow_circle_up</span>
+                <span class="gotip">Go Back To Top</span>
+        </div>
+
+        <!-- Vue載入 -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.global.js'></script>
+        <script src="js/vue.js"></script>
+
+</body>
+
+</html>

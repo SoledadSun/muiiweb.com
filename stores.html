@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
+        <meta name="author" content="Soledad, jennysun6691@gmail.com">
+        <!--viewport屬性說明參考資料: https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag#viewport_basics-->
+        <title>Muii Swim |Our Stores</title>
+
+        <!-- 網路字型 -->
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+        <!-- 網站小圖示(頁籤上) -->
+        <link rel="icon" href="images/Muii_logo.jpg">
+        <!-- 加入手機主畫面捷徑圖示 -->
+        <link rel="apple-touch-icon" href="images/Muii_logo.jpg"> <!-- 建議512*512 -->
+
+        <!-- Google圖標 -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- 自訂圖標 -->
+        <link rel="stylesheet" href="css/iconstyle.css" rel="stylesheet">
+
+        <!-- 歸零CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- 變數設定CSS -->
+        <link rel="stylesheet" href="css/basic.css">
+        <!-- 版面CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+	<!-- 媒體查詢 -->
+	<link rel="stylesheet" href="css/style_m.css" media="(min-width: 980px) and (max-width: 1239px)">
+	<link rel="stylesheet" href="css/style_s.css" media="(max-width: 979px)">
+
+        <!-- JQ載入 -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+        <!-- gotop JS -->
+        <script src="js/gotop.js"></script>  
+</head>
+
+<body>
+        <!-- 不會改變的資料都用id -->
+        <div class="special"><span>2023超集中比基尼推薦，Muiiswim專為亞洲女生設計</span></div>
+        <div id="header">
+             
+             <div id="logo">
+             <h1 title="Go back to Homepage"><span>Muii Swim</span><a href="index.html"></a></h1>
+             </div>
+
+             <div id="nav">
+                  <!-- 上層固定選單 -->
+                  <nav id="top-nav">
+                        <ul>
+                            <li><a href="#0"><span class="icon-cart" title="shopping car"></span></a></li>
+                            <li><a href="#0"><span class="icon-account" title="membership"></span></a></li>
+                            <li><a href="#0"><span class="icon-search" title="search"></span></a></li>
+                        </ul>
+                   </nav>
+                   
+                   <nav id="main-nav">
+                   		<!-- 漢堡選單 -->
+						<input type="checkbox" class="toggler">
+						<div class="hamburger"> <!--漢堡三條線-->
+							<div></div>
+						</div>  
+                       	<!-- 主選單 -->
+						<div class="menu">
+							<div>
+								<div>
+									<ul>
+										<li><a href="about.html">關於我們</a></li>
+										<li><a href="products.html">所有商品</a></li>
+										<li><a href="pick.html">如何挑選</a></li>
+										<li><a href="news.html">海邊生活<span class="material-icons">expand_more</span></a>
+											<ul>
+												<li><a href="news_person.html">人物專訪</a></li>
+												<li><a href="news_special.html">特別企劃</a></li>
+											</ul>
+										<li><a href="stores.html" class="highlight_txt">分店門市</a></li>
+
+                                                                                <!-- SNS選單 -->
+										<p id="nav-sns">
+											<a href="https://www.facebook.com/muiiswim/?locale=zh_TW" target="_blank"><span class="icon-facebook"></span></a>
+											<a href="https://www.instagram.com/muiiswim/" target="_blank"><span class="icon-instagram-150"></span></a>
+											<a href="#" target="_blank"><span class="icon-linkedin-150"></span></a>
+											<a href="https://mail.google.com/" target="_blank"><span class="icon-gmail"></span></a>
+										</p>
+									</ul>
+								</div>
+							</div>
+						</div>
+                  </nav>
+             </div>
+        </div>
+
+        <!-- 橫版大圖區塊 -->
+        <div class="hero-image" style="background-image: linear-gradient(rgba(175, 175, 175, 0.3), rgba(78, 78, 78, 0.5)) , url(images/surfing_02.jpg);">
+                <div class="hero-text">
+                        <h1 class="font_size-50 line_height-15">Muii Swim</h1>
+                        <p class="margin_bottom-20">Beauty comes in all sizes.</p>
+                        <button>SHOP NOW</button>
+                </div>
+        </div>
+        
+        <!-- 內容區塊 -->
+        <div id="main-content">
+            <div class="storepost">
+                    <!-- 左方圖片 -->
+                    <div class="store_pic border_radius-30">
+                        <a href="https://goo.gl/maps/gfBfEe3ARKYz4wTX6">
+                            <img src="images/store1.png" alt="Muii台北限定門市" class="flip_img">
+                            <p class="middle">Google Map</p>
+                        </a>     
+                    </div>
+                    
+                    <!-- 右方文字欄位 -->
+                    <div class="store_txt">
+                            <div class="category">
+                                    <!-- 標籤設計 --> <!--fill:svg文字格式改顏色，若之後要做hover互動，此處未設定fill顏色沒關係-->
+                                    <svg class="myicon" fill="#F18AB8" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em">
+                                    <path d="m524-262 140-140q11-11 16-24.5t5-28.5q0-32-22.5-54.5T608-532q-20 0-40 13t-44 42q-24-29-44-42t-40-13q-32 0-54.5 
+                                    22.5T363-455q0 15 5 28.5t16 24.5l140 140Zm35 165q-18 18-43.5 18T472-97L97-472q-10-10-13.5-21T80-516v-304q0-26 17-43t43-17h304q12 
+                                    0 24 3.5t22 13.5l373 373q19 19 19 44.5T863-401L559-97Zm-41-41 304-304-378-378H140v304l378 378ZM245-664q21 0 36.5-15.5T297-716q0-21-15.5-36.5T245-768q-21 
+                                    0-36.5 15.5T193-716q0 21 15.5 36.5T245-664ZM140-820Z"/>
+                                    </svg>
+                                    <a href="#">Waveman</a>
+                                    <a href="#">Taipei</a>
+
+                            </div>
+                            <!-- 右方文字 -->
+                            <h4>{臺北夏季限定門市}</h4>
+                            <p class="text-align_justify">地址：台北市中山區松江路97巷16號2樓<br>
+                            <br>
+                            ｜營業時間｜<br>
+                            13:30-21:30 無公休<br>
+                            <i class="material-icons color_secondary" style="font-size: 15px;">warning</i> 即日起～9/31止<br>
+                            <i class="material-icons color_secondary" style="font-size: 15px;">warning</i> 最後入場時間21:00 <br>
+                            女性專屬日：週一、二、四、五（限定生理女性入場）
+                            </p>
+                    </div>
+            </div>
+
+            <div class="storepost">
+                    <!-- 左方圖片 -->
+                    <div class="store_pic border_radius-30">
+                            <a href="https://goo.gl/maps/yYes5odtzhpxduBK6">
+                                <img src="images/store2.png" alt="" class="flip_img">
+                                <p class="middle">Google Map</p>
+                            </a>
+                    </div>
+                    
+                    <!-- 右方文字欄位 -->
+                    <div class="store_txt">
+                            <div class="category">
+                                    <!-- 標籤設計 -->
+                                    <svg class="myicon" fill="#F18AB8" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em">
+                                    <path d="m524-262 140-140q11-11 16-24.5t5-28.5q0-32-22.5-54.5T608-532q-20 0-40 13t-44 42q-24-29-44-42t-40-13q-32 0-54.5 
+                                    22.5T363-455q0 15 5 28.5t16 24.5l140 140Zm35 165q-18 18-43.5 18T472-97L97-472q-10-10-13.5-21T80-516v-304q0-26 17-43t43-17h304q12 
+                                    0 24 3.5t22 13.5l373 373q19 19 19 44.5T863-401L559-97Zm-41-41 304-304-378-378H140v304l378 378ZM245-664q21 0 36.5-15.5T297-716q0-21-15.5-36.5T245-768q-21 
+                                    0-36.5 15.5T193-716q0 21 15.5 36.5T245-664ZM140-820Z"/>
+                                    </svg>
+                                    <a href="#">Divercity</a>
+                                    <a href="#">Hsinchu</a>
+                            </div>
+                            <!-- 右方文字 -->
+                            <h4>{Divercity竹科戶外人}</h4>
+                            <p class="text-align_justify">
+                                地址：新竹縣芎林鄉文山路697號<br>
+                                <br>
+                                ｜營業時間｜<br>
+                                10:00-21:00 週一公休<br>
+                            </p>
+                    </div>
+            </div>
+
+            <div class="storepost">
+                    <!-- 左方圖片 -->
+                    <div class="store_pic border_radius-30">
+                            <a href="https://goo.gl/maps/y4oZg3GJpYDtvAHE8">
+                                <img src="images/store3.png" alt="" class="flip_img">
+                                <p class="middle">Google Map</p>
+                            </a>
+                    </div>
+                    
+                    <!-- 右方文字欄位 -->
+                    <div class="store_txt">
+                            <div class="category">
+                                    <!-- 標籤設計 -->
+                                    <svg class="myicon" fill="#F18AB8" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em">
+                                    <path d="m524-262 140-140q11-11 16-24.5t5-28.5q0-32-22.5-54.5T608-532q-20 0-40 13t-44 42q-24-29-44-42t-40-13q-32 0-54.5 
+                                    22.5T363-455q0 15 5 28.5t16 24.5l140 140Zm35 165q-18 18-43.5 18T472-97L97-472q-10-10-13.5-21T80-516v-304q0-26 17-43t43-17h304q12 
+                                    0 24 3.5t22 13.5l373 373q19 19 19 44.5T863-401L559-97Zm-41-41 304-304-378-378H140v304l378 378ZM245-664q21 0 36.5-15.5T297-716q0-21-15.5-36.5T245-768q-21 
+                                    0-36.5 15.5T193-716q0 21 15.5 36.5T245-664ZM140-820Z"/>
+                                    </svg>
+                                    <a href="#">Yilan</a>
+                                    <a href="#">頭城</a>
+                            </div>
+                            <!-- 右方文字 -->
+                            <h4>{海製商行二館}</h4>
+                            <p class="text-align_justify">地址：宜蘭縣頭城鎮開蘭東路 53-2號<br>
+                                <br>
+                                ｜營業時間｜<br>
+                                週一 、週四～週五 12:00 - 19:30<br>
+                                週二、三公休<br>
+                                週六、日         12:00 - 19:30<br>
+                                <i class="material-icons color_secondary" style="font-size: 15px;">warning</i> 最後入場時間為晚間七點<br>
+                                <i class="material-icons color_secondary" style="font-size: 15px;">warning</i> 淡季調整公休時間另行公告<br>
+                            </p>
+                    </div>
+            </div>
+
+            <div class="storepost">
+                    <!-- 左方圖片 -->
+                    <div class="store_pic border_radius-30">
+                            <a href="https://goo.gl/maps/2VxVPVjpugFZR3R9A">
+                                <img src="images/store4.png" alt="" class="flip_img">
+                                <p class="middle">Google Map</p>
+                            </a>
+                    </div>
+                    
+                    <!-- 右方文字欄位 -->
+                    <div class="store_txt">
+                            <div class="category">
+                                    <!-- 標籤設計 -->
+                                    <svg class="myicon" fill="#F18AB8" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em">
+                                    <path d="m524-262 140-140q11-11 16-24.5t5-28.5q0-32-22.5-54.5T608-532q-20 0-40 13t-44 42q-24-29-44-42t-40-13q-32 0-54.5 
+                                    22.5T363-455q0 15 5 28.5t16 24.5l140 140Zm35 165q-18 18-43.5 18T472-97L97-472q-10-10-13.5-21T80-516v-304q0-26 17-43t43-17h304q12 
+                                    0 24 3.5t22 13.5l373 373q19 19 19 44.5T863-401L559-97Zm-41-41 304-304-378-378H140v304l378 378ZM245-664q21 0 36.5-15.5T297-716q0-21-15.5-36.5T245-768q-21 
+                                    0-36.5 15.5T193-716q0 21 15.5 36.5T245-664ZM140-820Z"/>
+                                    </svg>
+                                    <a href="#">Taichung</a>
+                                    <a href="#">Slowdive</a>
+                            </div>
+                            <!-- 右方文字 -->
+                            <h4>{Slowdive 漫潛}</h4>
+                            <p class="text-align_justify">
+                                地址：臺中市北區美德街20號<br>
+                                <br>
+                                ｜營業時間｜<br>
+                                <i class="material-icons color_secondary" style="font-size: 15px;">warning</i> 預約制，請私訊漫潛粉專預約
+                            </p>
+                    </div>
+            </div>
+
+            <div class="storepost">
+                    <!-- 左方圖片 -->
+                    <div class="store_pic border_radius-30">
+                            <a href="https://goo.gl/maps/9ju52vQwPMFfL5wK9">
+                                <img src="images/store5.png" alt="" class="flip_img">
+                                <p class="middle">Google Map</p>
+                            </a>
+                    </div>
+                    
+                    <!-- 右方文字欄位 -->
+                    <div class="store_txt">
+                            <div class="category">
+                                    <!-- 標籤設計 -->
+                                    <svg class="myicon" fill="#F18AB8" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 -960 960 960" width="2em">
+                                    <path d="m524-262 140-140q11-11 16-24.5t5-28.5q0-32-22.5-54.5T608-532q-20 0-40 13t-44 42q-24-29-44-42t-40-13q-32 0-54.5 
+                                    22.5T363-455q0 15 5 28.5t16 24.5l140 140Zm35 165q-18 18-43.5 18T472-97L97-472q-10-10-13.5-21T80-516v-304q0-26 17-43t43-17h304q12 
+                                    0 24 3.5t22 13.5l373 373q19 19 19 44.5T863-401L559-97Zm-41-41 304-304-378-378H140v304l378 378ZM245-664q21 0 36.5-15.5T297-716q0-21-15.5-36.5T245-768q-21 
+                                    0-36.5 15.5T193-716q0 21 15.5 36.5T245-664ZM140-820Z"/>
+                                    </svg>
+                                    <a href="#">Tainan</a>
+                                    <a href="#">Across Surf Shop</a>
+                            </div>
+                            <!-- 右方文字 -->
+                            <h4>{Across Surf Shop}</h4>
+                            <p class="text-align_justify">地址：台南市中西區民生路2段372號1樓<br>
+                                <br>
+                                ｜營業時間｜<br>
+                                13:00-21:00 週一公休
+                            </p>
+                    </div>
+            </div>
+
+        <!-- 頁尾區塊 -->
+        <div id="footer">
+                <!-- logo區域 -->
+                <div id="small-logo"><img src="images/Muii_logo.jpg" alt=""></div>
+                <div id="copyright">
+                        <small>海邊生活工作室<br>聯絡地址：宜蘭縣頭城鎮開蘭東路32號</small>
+                </div>
+
+                <!-- 社群超連結&icon -->
+                <div id="sns">
+                        <a href="https://www.facebook.com/muiiswim/?locale=zh_TW" target="_blank"><span class="icon-facebook"></span></a>
+                        <a href="https://www.instagram.com/muiiswim/" target="_blank"><span class="icon-instagram-150"></span></a>
+                        <a href="#" target="_blank"><span class="icon-linkedin-150"></span></a>
+                        <a href="https://mail.google.com/" target="_blank"><span class="icon-gmail"></span></a>
+                </div>
+
+                <!-- 退換貨政策 -->
+                <div class="submenu">
+                        <ul>
+                                <li><a href="#">退換貨政策</a></li>
+                                <li><a href="#">出貨及付款</a></li>
+                                <li><a href="#">隱私權政策</a></li>
+                                <li><a href="#">常見Q&A</a></li>
+                                <li><a href="#">會員政策</a></li>
+                        </ul>
+                </div>
+
+        </div>
+        <!-- 置頂button -->
+        <div id="gotop">
+                <span class="material-icons">arrow_circle_up</span>
+                <span class="gotip">Go Back To Top</span>
+        </div>
+
+</body>
+
+</html>

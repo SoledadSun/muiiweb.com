@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
+        <meta name="author" content="Soledad, jennysun6691@gmail.com">
+        <!--viewport屬性說明參考資料: https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag#viewport_basics-->
+        <title>Muii Swim | Muii Seaside-Special</title>
+
+        <!-- 網路字型 -->
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+        <!-- 網站小圖示(頁籤上) -->
+        <link rel="icon" href="images/Muii_logo.jpg">
+        <!-- 加入手機主畫面捷徑圖示 -->
+        <link rel="apple-touch-icon" href="images/Muii_logo.jpg"> <!-- 建議512*512 -->
+
+        <!-- Google圖標 -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- 自訂圖標 -->
+        <link rel="stylesheet" href="css/iconstyle.css" rel="stylesheet">
+
+        <!-- 歸零CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- 變數設定CSS -->
+        <link rel="stylesheet" href="css/basic.css">
+        <!-- 版面CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+	<!-- 媒體查詢 -->
+	<link rel="stylesheet" href="css/style_m.css" media="(min-width: 980px) and (max-width: 1239px)">
+	<link rel="stylesheet" href="css/style_s.css" media="(max-width: 979px)">
+        
+        <!-- JQ載入 -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+        <!-- gotop JS -->
+        <script src="js/gotop.js"></script>   
+</head>
+
+<body>
+        <!-- 不會改變的資料都用id -->
+        <div class="special"><span>2023超集中比基尼推薦，Muiiswim專為亞洲女生設計</span></div>
+        <div id="header">
+             
+             <div id="logo">
+             <h1 title="Go back to Homepage"><span>Muii Swim</span><a href="index.html"></a></h1>
+             </div>
+
+             <div id="nav">
+                  <!-- 上層固定選單 -->
+                  <nav id="top-nav">
+                        <ul>
+                            <li><a href="#0"><span class="icon-cart" title="shopping car"></span></a></li>
+                            <li><a href="#0"><span class="icon-account" title="membership"></span></a></li>
+                            <li><a href="#0"><span class="icon-search" title="search"></span></a></li>
+                        </ul>
+                   </nav>
+                   
+                   <nav id="main-nav">
+                        <!-- 漢堡選單 -->
+                        <input type="checkbox" class="toggler">
+                        <div class="hamburger"> <!--漢堡三條線-->
+                                <div></div>
+                        </div>  
+                        <!-- 主選單 -->
+						<div class="menu">
+							<div>
+								<div>
+									<ul>
+										<li><a href="about.html">關於我們</a></li>
+										<li><a href="products.html">所有商品</a></li>
+										<li><a href="pick.html">如何挑選</a></li>
+										<li><a href="news.html" class="highlight_txt">海邊生活<span class="material-icons">expand_more</span></a>
+											<ul>
+												<li><a href="news_person.html">人物專訪</a></li>
+												<li><a href="news_special.html" class="highlight_txt">特別企劃</a></li>
+											</ul>
+										<li><a href="stores.html">分店門市</a></li>
+									
+
+                                                                                <!-- SNS選單 -->
+                                                                                <p id="nav-sns">
+                                                                                        <a href="https://www.facebook.com/muiiswim/?locale=zh_TW" target="_blank"><span class="icon-facebook"></span></a>
+                                                                                        <a href="https://www.instagram.com/muiiswim/" target="_blank"><span class="icon-instagram-150"></span></a>
+                                                                                        <a href="#" target="_blank"><span class="icon-linkedin-150"></span></a>
+                                                                                        <a href="https://mail.google.com/" target="_blank"><span class="icon-gmail"></span></a>
+                                                                                </p>
+                                                                        </ul>
+								</div>
+							</div>
+						</div>
+                  </nav>
+             </div>
+        </div>
+
+        <!-- 橫版大圖區塊 -->
+        <div class="hero-image" style="background-image: linear-gradient(rgba(175, 175, 175, 0.3), rgba(78, 78, 78, 0.5)) , url(images/seaside2.jpg);">
+                <div class="hero-text">
+                        <h1 class="font_size-50 line_height-15 font-weight_bolder text_uppercase">Special</h1>
+                        <h3 class="margin_top-50">
+                            <a href="news.html" class="text_uppercase font-weight_bolder">海邊生活</a>
+                            <i class="material-icons">keyboard_arrow_right</i>特別企劃
+                        </h3>
+                </div>
+        </div>
+        
+        <!-- 內容區塊 -->
+        <div id="main-content" class="bg_piggy overflow_hidden">
+                <!-- 左側圖文 -->
+                <div class="leftcolumn">
+                        <div class="card">
+                                <h2>2023今夏最Hot燒!!</h2>
+                                <h5>跟著Muii迎接夏天，你從未感受過的舒適感!</h5>
+                                <div class="cardimg"><img src="images/index3.jpg" alt=""></div>
+                                <p>在平時繁忙的時間裡，我們都各自在工作崗位及家庭中扮演各種角色，很辛苦卻也覺得甜蜜。當接觸海水的那一刻，全世界都安靜了，唯有自己呼吸的聲音，將所有思緒留在岸上，在水裡擁抱真實的自我，那是無與倫比的美好。
+                                        <br>邀請妳跟我們分享在脫離角色之後，接觸海洋的當下帶給妳什麼樣正面的啟發。快來跟小編分享妳在海邊的美照吧!!
+                                        <br>
+                                        <br>【活動時間】 即日起～9/30
+                                        <br>
+                                        <br>【參與辦法】
+                                        <br>發佈圖文在IG限時動態24hr並Tag @muiiswim
+                                        <br>(1).上壓一段文字：用一句話描述海洋帶給你的啟發或著回饋
+                                        <br>(2).照片內容：穿著Muiiswim泳衣在海邊開心的樣子
+                                        <br>
+                                        <br>【PO文送購物金】 官網、門市皆可抵用
+                                        <br>將畫面截圖私訊小編就可以獲得200元購物金呦!!
+                                </p>
+                                <div class="card_more"><a href="#0">詳請請見內文<i class="material-icons">double_arrow</i></a></div>                               
+                        </div>
+
+                        <div class="card">
+                                <h2>平口美胸上衣新上市!!</h2>
+                                <h5>Muiiseaside全新系列熱賣中!</h5>
+                                <div class="cardimg"><img src="images/product8_banner.png" alt=""></div>
+                                <p>「有參加過淨灘的人，知道那些垃圾最後去了哪裡呢？」</p>
+                                <p>第一站：不垃圾場<br>
+                                        <br>每個人對不垃圾場第一印象都是，這是什麼工作室呢？在一大片稻田旁，有一間小小的平房門戶敞開，裡面擺滿了塑膠的各種東西，有回收回來的扭蛋殼，再製成新產品的刮蠟版，擺得像是一個小博物館，這就是座落在宜蘭的不垃圾場。小麥和kaiy是這個工作室的創辦人，他們會成立這間工作室不是為了賺錢，而是個理念「地球只有一個，我能為地球做點什麼？」小麥分享著每一個塑膠都是極其有用的製品，但是我們經常只使用一次就丟棄，這才造成了浪費。</p>
+                                     <p>當龜山島旅遊加上離岸生活工作室，所觸發的化學效應無法用公式計算，只能去感受每一道光線，海浪的每個起伏。</p>
+                                     <div class="card_more"><a href="#0">詳請請見內文<i class="material-icons">double_arrow</i></a></div>                               
+                        </div>
+                </div>
+                <!-- 右側圖塊 -->
+                <div class="rightcolumn">
+                        <!-- Hightlight News -->
+                        <div class="card">
+                                <h2>Hightlight News</h2>
+                                <div class="cardimg"><img src="images/seaside4_banner.png" alt=""></div>
+                                <p>muiiswim設計師說：「針對使用者做設計是我的初衷，如果今天對象是一個跆拳道選手，我也希望製作她穿著最舒適的機能服。」</p>
+                                <div class="card_more"><a href="news.html">查看更多<i class="material-icons">double_arrow</i></a></div> 
+                        </div>
+                        <!-- Best Seller -->
+                        <div class="card">
+                                <h2>Best Seller</h2>
+                                <a href="images/product2-1.png" title="Product Detail">
+                                        <div class="cardimg"><img src="images/product2-1.png" alt=""></div>
+                                        <span>交叉美背無背扣</span>
+                                </a>
+                                <a href="images/product7.png" title="Product Detail">
+                                        <div class="cardimg"><img src="images/product7.png" alt=""></div>
+                                        <span>美胸上衣</span>
+                                </a>
+                                <a href="images/product5.png" title="Product Detail">
+                                        <div class="cardimg"><img src="images/product5.png" alt=""></div>
+                                        <span>平口美胸上衣</span>
+                                </a>
+                        </div>
+                </div>
+
+        </div>    
+
+        <!-- 頁尾區塊 -->
+        <div id="footer">
+                <!-- logo區域 -->
+                <div id="small-logo"><img src="images/Muii_logo.jpg" alt=""></div>
+                <div id="copyright">
+                        <small>海邊生活工作室<br>聯絡地址：宜蘭縣頭城鎮開蘭東路32號</small>
+                </div>
+
+                <!-- 社群超連結&icon -->
+                <div id="sns">
+                        <a href="https://www.facebook.com/muiiswim/?locale=zh_TW" target="_blank"><span class="icon-facebook"></span></a>
+                        <a href="https://www.instagram.com/muiiswim/" target="_blank"><span class="icon-instagram-150"></span></a>
+                        <a href="#" target="_blank"><span class="icon-linkedin-150"></span></a>
+                        <a href="https://mail.google.com/" target="_blank"><span class="icon-gmail"></span></a>
+                </div>
+
+                <!-- 退換貨政策 -->
+                <div class="submenu">
+                        <ul>
+                                <li><a href="#">退換貨政策</a></li>
+                                <li><a href="#">出貨及付款</a></li>
+                                <li><a href="#">隱私權政策</a></li>
+                                <li><a href="#">常見Q&A</a></li>
+                                <li><a href="#">會員政策</a></li>
+                        </ul>
+                </div>
+
+        </div>
+        <!-- 置頂button -->
+        <div id="gotop">
+                <span class="material-icons">arrow_circle_up</span>
+                <span class="gotip">Go Back To Top</span>
+        </div>
+
+</body>
+
+</html>

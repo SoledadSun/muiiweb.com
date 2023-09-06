@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
+        <meta name="author" content="Soledad, jennysun6691@gmail.com">
+        <!--viewport屬性說明參考資料: https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag#viewport_basics-->
+        <title>Muii Swim | about us</title>
+
+        <!-- 網路字型 -->
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+        <!-- 網站小圖示(頁籤上) -->
+        <link rel="icon" href="images/Muii_logo.jpg">
+        <!-- 加入手機主畫面捷徑圖示 -->
+        <link rel="apple-touch-icon" href="images/Muii_logo.jpg"> <!-- 建議512*512 -->
+
+        <!-- Google圖標 -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- 自訂圖標 -->
+        <link rel="stylesheet" href="css/iconstyle.css" rel="stylesheet">
+                
+        <!-- 歸零CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- 變數設定CSS -->
+        <link rel="stylesheet" href="css/basic.css">
+        <!-- 版面CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+	<!-- 媒體查詢 -->
+	<link rel="stylesheet" href="css/style_m.css" media="(min-width: 980px) and (max-width: 1239px)">
+	<link rel="stylesheet" href="css/style_s.css" media="(max-width: 979px)">
+        
+        <!-- JQ載入 -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+        <!-- gotop JS -->
+        <script src="js/gotop.js"></script>        
+
+</head>
+
+<body>
+        <!-- 不會改變的資料都用id -->
+        <div class="special"><span>2023超集中比基尼推薦，Muiiswim專為亞洲女生設計</span></div>
+        <div id="header">
+             
+             <div id="logo">
+             <h1 title="Go back to Homepage"><span>Muii Swim</span><a href="index.html"></a></h1>
+             </div>
+
+             <div id="nav">
+                  <!-- 上層固定選單 -->
+                  <nav id="top-nav">
+                        <ul>
+                            <li><a href="#0"><span class="icon-cart" title="shopping car"></span></a></li>
+                            <li><a href="#0"><span class="icon-account" title="membership"></span></a></li>
+                            <li><a href="#0"><span class="icon-search" title="search"></span></a></li>
+                        </ul>
+                   </nav>
+                   
+                   <nav id="main-nav">
+                        <!-- 漢堡選單 -->
+                        <input type="checkbox" class="toggler">
+                        <div class="hamburger"> <!--漢堡三條線-->
+                                <div></div>
+                        </div>  
+                        <!-- 主選單 -->
+                        <div class="menu">
+							<div>
+								<div>
+									<ul>
+										<li><a href="about.html" class="highlight_txt">關於我們</a></li>
+										<li><a href="products.html">所有商品</a></li>
+										<li><a href="pick.html">如何挑選</a></li>
+										<li><a href="news.html">海邊生活<span class="material-icons">expand_more</span></a>
+											<ul>
+												<li><a href="news_person.html">人物專訪</a></li>
+												<li><a href="news_special.html">特別企劃</a></li>
+											</ul>
+										<li><a href="stores.html">分店門市</a></li>
+
+										<!-- SNS選單 -->
+										<p id="nav-sns">
+											<a href="https://www.facebook.com/muiiswim/?locale=zh_TW" target="_blank"><span class="icon-facebook"></span></a>
+											<a href="https://www.instagram.com/muiiswim/" target="_blank"><span class="icon-instagram-150"></span></a>
+											<a href="#" target="_blank"><span class="icon-linkedin-150"></span></a>
+											<a href="https://mail.google.com/" target="_blank"><span class="icon-gmail"></span></a>
+										</p>
+									</ul>
+								</div>
+							</div>
+                        </div>
+                
+                  </nav>
+             </div>
+        </div>
+
+        <!-- 橫版大圖區塊 -->
+        <div class="hero-image" style="background-image: linear-gradient(rgba(175, 175, 175, 0.3), rgba(78, 78, 78, 0.5)) , url(images/index4.png);">
+                <div class="hero-text">
+                        <h1 class="font_size-50 line_height-15">Muii Swim</h1>
+                        <p class="margin_bottom-20">Beauty comes in all sizes.</p>
+                </div>
+        </div>
+
+        <!-- 設計師區塊 -->
+        <div class="designer"> 
+                <img src="images/designer.jpg" alt="設計師-陳瑛眉 Ahbiee chen">
+                
+                <div class="introduction">
+                <h2>陳瑛眉 Ahbiee chen</h2>
+                <p>海邊生活設計有限公司</p>
+                <p>Facebook：<a href="https://www.facebook.com/muiiswim/?locale=zh_TW">@muiiswim</a></p>
+                <p>I G：<a href="https://www.instagram.com/muiiswim/">＠muii.swim</a></p>
+                <p> E-mail：<a href="https://mail.google.com/">muiiswim.seaside@gmail.com</a></p>
+                </div>
+        </div>
+        
+        <!-- 滿版文字區塊 -->
+        <div class="full_layout bg_light">
+                <div id="maintxt">
+                        <h2 class="color_dark_grey">{Muii seaside}海邊生活，熱情創作的設計工作室</h2>
+                        <p>muii seaside是由一位喜愛海邊生活的女生所創辦的設計工作室，她以海邊生活為藍圖，設計出適合亞洲女性的比基尼泳裝。</p>
+                        <p>海邊生活設計以產品設計為技術核心，致力於比基尼產品上的力學結構設計，專門以亞洲人的題型為研究對象，<br><b>純手工設計、手工打造最適合亞洲體型、兼具美型與機能的比基尼。</b></p>
+                        <img src="images/designer_banner.png" alt="設計過程">
+                </div>
+        </div>
+
+        <!-- picshow區塊 -->
+        <div id="picshow">
+                <a href="products.html"><img src="images/product3.png" alt="Fashion Village" title="Click to see more"></a>   
+                <a href="products.html"><img src="images/product5.png" alt="Fashion Village" title="Click to see more"></a>
+                <a href="products.html"><img src="images/product4.png" alt="Fashion Village" title="Click to see more"></a>
+                <a href="products.html"><img src="images/product6.png" alt="Fashion Village" title="Click to see more"></a>            
+        </div>
+
+        <!-- 表單+地圖區塊 -->
+        <div class="full_layout bg_light padding_v3">
+                <div id="main-content">
+                        <h2 class="color_pink">Contact Us</h2>
+                        <div id="connect_form">
+                                <form method="post" action="">
+                                        <input type="text" name="username" id="username" placeholder="Your Name">
+                                        <input type="text" name="usermail" id="email" placeholder="Your Email">
+                                        <input type="text" name="userphone" id="phone" placeholder="Your Phone Number">
+                                        <textarea name="useropinion" id="useropinion" placeholder="Leave Message Here"></textarea>
+                                        <input type="submit" value="Submit" class="button_primary-gradient cursor_pointer" 
+                                                onclick="alert('Your feedback is received with many thanks!\n We will respond you ASAP!')">
+                                </form>
+                        </div>
+                        <div id="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14458.875163569268!2d121.53086254703851!3d25.043615635438098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a998b4cd3639%3A0x6353cded4cef46da!2zbXVpaSB4IOeUt-WtkOa8oueahOa1qiDlj7DljJflpI_lraPnm7Tnh5_lupc!5e0!3m2!1szh-TW!2stw!4v1688660741063!5m2!1szh-TW!2stw" width="98%" height="445" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+                        </div>
+                </div>
+        </div>
+
+        <!-- 頁尾區塊 -->
+        <div id="footer">
+                <!-- logo區域 -->
+                <div id="small-logo"><img src="images/Muii_logo.jpg" alt=""></div>
+                <div id="copyright">
+                        <small>海邊生活工作室<br>聯絡地址：宜蘭縣頭城鎮開蘭東路32號</small>
+                </div>
+
+                <!-- 社群超連結&icon -->
+                <div id="sns">
+                        <a href="https://www.facebook.com/muiiswim/?locale=zh_TW" target="_blank"><span class="icon-facebook"></span></a>
+                        <a href="https://www.instagram.com/muiiswim/" target="_blank"><span class="icon-instagram-150"></span></a>
+                        <a href="#" target="_blank"><span class="icon-linkedin-150"></span></a>
+                        <a href="https://mail.google.com/" target="_blank"><span class="icon-gmail"></span></a>
+                </div>
+
+                <!-- 退換貨政策 -->
+                <div class="submenu">
+                        <ul>
+                                <li><a href="#">退換貨政策</a></li>
+                                <li><a href="#">出貨及付款</a></li>
+                                <li><a href="#">隱私權政策</a></li>
+                                <li><a href="#">常見Q&A</a></li>
+                                <li><a href="#">會員政策</a></li>
+                        </ul>
+                </div>
+
+        </div>
+        <!-- 置頂button -->
+        <div id="gotop">
+                <span class="material-icons">arrow_circle_up</span>
+                <span class="gotip">Go Back To Top</span>                
+        </div>
+
+</body>
+
+</html>

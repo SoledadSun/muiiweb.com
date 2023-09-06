@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
+        <meta name="author" content="Soledad, jennysun6691@gmail.com">
+        <!--viewport屬性說明參考資料: https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag#viewport_basics-->
+        <title>Muii Swim | Our Products</title>
+
+        <!-- 網路字型 -->
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+        <!-- 網站小圖示(頁籤上) -->
+        <link rel="icon" href="images/Muii_logo.jpg">
+        <!-- 加入手機主畫面捷徑圖示 -->
+        <link rel="apple-touch-icon" href="images/Muii_logo.jpg"> <!-- 建議512*512 -->
+
+        <!-- Google圖標 -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- 自訂圖標 -->
+        <link rel="stylesheet" href="css/iconstyle.css" rel="stylesheet">
+        
+        <!-- 歸零CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- 變數設定CSS -->
+        <link rel="stylesheet" href="css/basic.css">
+        <!-- 版面CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- 橫幅輪播CSS -->
+        <link rel="stylesheet" href="css/slide.css">
+
+        <!-- 媒體查詢 -->
+        <link rel="stylesheet" href="css/style_m.css" media="(min-width: 980px) and (max-width: 1239px)">
+        <link rel="stylesheet" href="css/style_s.css" media="(max-width: 979px)">
+        
+        <!-- JQ載入 -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+        <!-- 橫幅輪播 JS -->
+        <script src="js/slide.min.js"></script>
+
+        <!-- 產品選單 JS -->
+        <script src="js/product_nav.js"></script> 
+
+        <!-- gotop JS -->
+        <script src="js/gotop.js"></script>  
+</head>
+
+<body>
+        <!-- 不會改變的資料都用id -->
+        <div class="special"><span>2023超集中比基尼推薦，Muiiswim專為亞洲女生設計</span></div>
+        <div id="header">
+             
+             <div id="logo">
+             <h1 title="Go back to Homepage"><span>Muii Swim</span><a href="index.html"></a></h1>
+             </div>
+
+             <div id="nav">
+                  <!-- 上層固定選單 -->
+                  <nav id="top-nav">
+                        <ul>
+                            <li><a href="#0"><span class="icon-cart" title="shopping car"></span></a></li>
+                            <li><a href="#0"><span class="icon-account" title="membership"></span></a></li>
+                            <li><a href="#0"><span class="icon-search" title="search"></span></a></li>
+                        </ul>
+                   </nav>
+                   
+                   <nav id="main-nav">
+                    	<!-- 漢堡選單 -->
+                        <input type="checkbox" class="toggler">
+                        <div class="hamburger"> <!--漢堡三條線-->
+                            <div></div>
+                        </div>  
+                        <!-- 主選單 -->
+                        <div class="menu">
+                            <div>
+                                <div>
+                                    <ul>
+                                        <li><a href="about.html">關於我們</a></li>
+                                        <li><a href="products.html" class="highlight_txt">所有商品</a></li>
+                                        <li><a href="pick.html">如何挑選</a></li>
+                                        <li><a href="news.html">海邊生活<span class="material-icons">expand_more</span></a>
+                                            <ul>
+                                                <li><a href="news_person.html">人物專訪</a></li>
+                                                <li><a href="news_special.html">特別企劃</a></li>
+                                            </ul>
+                                        <li><a href="stores.html">分店門市</a></li>
+
+                                        <!-- SNS選單 -->
+										<p id="nav-sns">
+											<a href="https://www.facebook.com/muiiswim/?locale=zh_TW" target="_blank"><span class="icon-facebook"></span></a>
+											<a href="https://www.instagram.com/muiiswim/" target="_blank"><span class="icon-instagram-150"></span></a>
+											<a href="#" target="_blank"><span class="icon-linkedin-150"></span></a>
+											<a href="https://mail.google.com/" target="_blank"><span class="icon-gmail"></span></a>
+										</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                  </nav>
+             </div>
+        </div>
+
+        <!-- 輪播大圖區塊 -->
+        <div id="banner">
+                <div id="slide2d" class="slide-carousel slide-2d">
+                        <ul class="item-list">
+                                <li class="item0">
+                                        <div class="item-content">
+                                                <a href="#0">                
+                                                        <picture>
+                                                        <!-- [RWD]媒體查詢:依顯示器大小偵測要放入的圖片 -->
+                                                        <source media="(min-width:768px) and (max-width:959px)" srcset="images/surfing_02.jpg"> <!--平板-->
+                                                        <source media="(max-width:767px)" srcset="images/index3.jpg"> <!--手機-->
+                                                        <img src="images/index9.jpg" alt="Muii Swim">
+                                                        </picture>
+                                                </a>
+                                        </div>
+                                </li>
+
+                                <li class="item1">
+                                        <div class="item-content">
+                                                <a href="#0">                
+                                                        <picture>
+                                                        <source media="(min-width:768px) and (max-width:959px)" srcset="images/surfing_02.jpg"> <!--平板-->
+                                                        <source media="(max-width:767px)" srcset="images/index3.jpg"> <!--手機-->
+                                                        <img src="images/index3.jpg" alt="Muii Swim">
+                                                        </picture>
+                                                </a>
+                                        </div>
+                                </li>
+
+                                <li class="item2">
+                                        <div class="item-content">
+                                                <a href="#0">                
+                                                        <picture>
+                                                        <source media="(min-width:768px) and (max-width:959px)" srcset="images/surfing_02.jpg"> <!--平板-->
+                                                        <source media="(max-width:767px)" srcset="images/index3.jpg"> <!--手機-->
+                                                        <img src="images/index7.jpg" alt="Muii Swim">
+                                                        </picture>
+                                                </a>
+                                        </div>
+                                </li>
+
+                                <li class="item3">
+                                        <div class="item-content">
+                                                <a href="#0">                
+                                                        <picture>
+                                                        <source media="(min-width:768px) and (max-width:959px)" srcset="images/surfing_02.jpg"> <!--平板-->
+                                                        <source media="(max-width:767px)" srcset="images/index3.jpg"> <!--手機-->
+                                                        <img src="images/index8.jpg" alt="Muii Swim">
+                                                        </picture>
+                                                </a>
+                                        </div>
+                                </li>
+                        </ul>
+                        <!-- 指示圓點小圖示 -->
+                        <div class="indicator-list">
+                                <a href="#0" data-slide-index="0" class="selected"></a>
+                                <a href="#0" data-slide-index="1"></a>
+                                <a href="#0" data-slide-index="2"></a>
+                                <a href="#0" data-slide-index="3"></a>
+                        </div>
+                        <!-- 左右控制箭頭 -->
+                        <div class="control">
+                                <a href="#0" class="icon-chevron_left" glyphicon glyphicon-menu-left></a>
+                                <a href="#0" class="icon-chevron_right" glyphicon glyphicon-menu-right></a>
+                        </div>
+                        <!-- 下方黑色區塊 -->
+                        <div class="desc"></div>
+                </div>
+            </div>
+        
+        <!-- 內容區塊 -->
+        <div id="main-content">
+            <!-- 左側導覽列 -->
+            <h4 class="color_dark_grey text_align-center margin_bottom-20">All Product</h4>
+            
+            <div class="left">
+                <h5 class="font_weight-bolder">Category | 分類</h5>
+                <nav id="product_nav">
+                    <ul id="dropdown_menu">
+                        <li><a href="#0">精選商品</a></li>
+                        <li><a href="#0">快速出貨區</a></li>
+                        <li><a href="#0">2023新品上架</a></li>
+                        <li><a href="#0">百搭素色</a></li>
+                        <li><a href="#0">經典熱銷</a></li>
+                        <li><a href="#0">上半身<span class="button"><i class="material-icons">expand_more</i></span></a>
+                            <ul class="nav_item">
+                                <li><a href="#0">平口美胸上衣</a></li>
+                                <li><a href="#0">美胸馬甲上衣</a></li>
+                                <li><a href="#0">美胸無綁帶上衣</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#0">下半身<span class="button"><i class="material-icons">expand_more</i></span></a>
+                            <ul class="nav_item">
+                                <li><a href="#0">甜挖臀版型</a></li>
+                                <li><a href="#0">中/高腰褲</a></li>
+                                <li><a href="#0">丁字版型</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#0">連身款<span class="button"><i class="material-icons">expand_more</i></span></a>
+                            <ul class="nav_item">
+                                <li><a href="#0">基本露背款</a></li>
+                                <li><a href="#0">連身甜挖</a></li>
+                                <li><a href="#0">連身丁字</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#0">長袖長褲</a></li>
+                        <li><a href="#0">Indosole拖鞋</a></li>
+                        <li><a href="#0">Muii訂製<span class="button"><i class="material-icons">expand_more</i></span></a>
+                            <ul class="nav_item">
+                                <li><a href="#0">{花色}訂製</a></li>
+                                <li><a href="#0">花色總攬</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#0">優惠商品</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+
+            <!-- 右側產品列 -->
+
+            <div class="right">            
+                <div class="demobox">
+                    <a href="product_single.html">
+                        <div class="bg_top" style="background-image:url(images/product8.png)">
+                            <button class="cart_button">加入購物車</button>
+                        </div>
+                    <h6>{橄欖綠} 平口美胸上衣</h6>
+                    </a>
+                    <span class="price">NT 1,680</span>
+                </div>
+
+                <div class="demobox">
+                    <a href="product_single.html">
+                        <div class="bg_top" style="background-image:url(images/product2-1.png)">
+                            <button class="cart_button">加入購物車</button>
+                        </div>
+                        <h6>{霧霾藍} 運動導流上衣</h6>
+                    </a>
+                    <span class="price">NT 1,480</span>
+                </div>
+
+                <div class="demobox">
+                    <a href="product_single.html">
+                        <div class="bg_top" style="background-image:url(images/product4.png)">
+                            <button class="cart_button">加入購物車</button>
+                        </div>
+                        <h6>{夜藍花} 美胸無綁帶上衣</h6>
+                    </a>
+                    <span class="price">NT 1,680</span>
+                </div>
+
+                <div class="demobox">
+                    <a href="product_single.html">
+                        <div class="bg_bottom" style="background-image:url(images/product2-2.png)">
+                            <button class="cart_button">加入購物車</button>
+                        </div>
+                        <h6>{霧霾藍} 蜜臀歐美丁</h6>
+                    </a>
+                    <span class="price">NT 1,680</span>
+                </div>
+
+                <div class="demobox">
+                    <a href="product_single.html">
+                        <div class="bg_bottom" style="background-image:url(images/product3.png)">
+                            <button class="cart_button">加入購物車</button>
+                        </div>
+                        <h6>{絲光深綠} 美胸無綁帶上衣</h6>
+                    </a>
+                    <span class="price">NT 1,880</span>
+                </div>
+
+                <div class="demobox">
+                    <a href="product_single.html">
+                        <div class="bg_bottom" style="background-image:url(images/product5.png)">
+                            <button class="cart_button">加入購物車</button>
+                        </div>
+                        <h6>{海藍} 平口美胸上衣</h6>
+                    </a>
+                    <span class="price">NT 1,680</span>
+                </div>
+
+                <div class="demobox">
+                    <a href="product_single.html">
+                        <div class="bg_top" style="background-image:url(images/product6.png)">
+                            <button class="cart_button">加入購物車</button>
+                        </div>
+                        <h6>{絲光紅銅} 運動型無綁帶上衣</h6>
+                    </a>
+                    <span class="price">NT 1,480</span>
+                </div>
+
+                <div class="demobox">
+                    <a href="product_single.html">
+                        <div class="bg_top" style="background-image:url(images/product10.png)">
+                            <button class="cart_button">加入購物車</button>
+                        </div>
+                        <h6>{藍葉棕梠} 平口美胸上衣</h6>
+                    </a>
+                    <span class="price">NT 1,680</span>
+                </div>
+
+                <div class="demobox">
+                    <a href="product_single.html">
+                        <div class="bg_top" style="background-image:url(images/product11.png)">
+                            <button class="cart_button">加入購物車</button>
+                        </div>
+                        <h6>{橄欖綠} 平口美胸上衣</h6>
+                    </a>
+                    <span class="price">NT 1,680</span>
+                </div>
+
+                <div class="demobox">
+                    <a href="product_single.html">
+                        <div class="bg_bottom" style="background-image:url(images/product12.png)">
+                            <button class="cart_button">加入購物車</button>
+                        </div>
+                        <h6>{絲光霧霾藍} 美胸無綁帶上衣</h6>
+                    </a>
+                    <span class="price">NT 1,880</span>
+                </div>
+
+                <div class="demobox">
+                    <a href="product_single.html">
+                        <div class="bg_bottom" style="background-image:url(images/product13.png)">
+                            <button class="cart_button">加入購物車</button>
+                        </div>
+                        <h6>{藍葉棕梠} 平口美胸上衣</h6>
+                    </a>
+                    <span class="price">NT 1,680</span>
+                </div>
+
+                <div class="demobox">
+                    <a href="product_single.html">
+                        <div class="bg_bottom" style="background-image:url(images/product14.png)">
+                            <button class="cart_button">加入購物車</button>
+                        </div>
+                        <h6>{艷夏} 甜挖臀綁帶褲</h6>
+                    </a>
+                    <span class="price">NT 1,680</span>
+                </div>
+            </div>
+        </div>    
+
+        <!-- 頁面導覽頁碼+圖示 數字 -->
+
+        <div id="nav_bar">
+                <!-- <a href="#0" class="current-icon">1</a>
+                <a href="#p2">2</a>
+                <a href="#p3">3</a>
+                <a href="#p4">4</a>
+                <a href="#p5">5</a>-->
+
+                <!-- 左邊箭頭 -->
+                <a href="#" class="tooltip" style="transform: translateY(5%);">
+                        <i class="icon-first_page"></i>
+                        <span class="tooltiptext">前5頁</span>
+                </a>
+                <a href="#" style="transform: translateY(5%);"><span class="icon-chevron_left"></span></a>
+
+                <!-- 數字區 -->
+                <a href="#"><span class="icon_num">5</span></a>
+                <a href="#"><span class="icon_num">6</span></a>
+                <a href="#0"><span class="icon_num  current-icon">7</span></a>
+                <a href="#"><span class="icon_num">8</span></a>
+                <a href="#"><span class="icon_num">9</span></a>
+
+                <!-- 右邊箭頭 -->
+                <a href="#" style="transform: translateY(5%);"><span class="icon-chevron_right"></span></a>
+                <a href="#" class="tooltip" style="transform: translateY(5%);">
+                        <i class="icon-last_page"></i>
+                        <span class="tooltiptext">下5頁</span>
+                </a>
+        </div> 
+        <!-- 頁尾區塊 -->
+        <div id="footer">
+                <!-- logo區域 -->
+                <div id="small-logo"><img src="images/Muii_logo.jpg" alt=""></div>
+                <div id="copyright">
+                        <small>海邊生活工作室<br>聯絡地址：宜蘭縣頭城鎮開蘭東路32號</small>
+                </div>
+
+                <!-- 社群超連結&icon -->
+                <div id="sns">
+                        <a href="https://www.facebook.com/muiiswim/?locale=zh_TW" target="_blank"><span class="icon-facebook"></span></a>
+                        <a href="https://www.instagram.com/muiiswim/" target="_blank"><span class="icon-instagram-150"></span></a>
+                        <a href="#" target="_blank"><span class="icon-linkedin-150"></span></a>
+                        <a href="https://mail.google.com/" target="_blank"><span class="icon-gmail"></span></a>
+                </div>
+
+                <!-- 退換貨政策 -->
+                <div class="submenu">
+                    <ul>
+                            <li><a href="#">退換貨政策</a></li>
+                            <li><a href="#">出貨及付款</a></li>
+                            <li><a href="#">隱私權政策</a></li>
+                            <li><a href="#">常見Q&A</a></li>
+                            <li><a href="#">會員政策</a></li>
+                    </ul>
+                </div>
+
+        </div>
+        <!-- 置頂button -->
+        <div id="gotop">
+                <span class="material-icons">arrow_circle_up</span>
+                <span class="gotip">Go Back To Top</span>
+        </div>
+
+</body>
+
+</html>

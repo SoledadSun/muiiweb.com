@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
+        <meta name="author" content="Soledad, jennysun6691@gmail.com">
+        <!--viewport屬性說明參考資料: https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag#viewport_basics-->
+        <title>Muii Swim | Styles and Sizes</title>
+
+        <!-- 網路字型 -->
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+        <!-- 網站小圖示(頁籤上) -->
+        <link rel="icon" href="images/Muii_logo.jpg">
+        <!-- 加入手機主畫面捷徑圖示 -->
+        <link rel="apple-touch-icon" href="images/Muii_logo.jpg"> <!-- 建議512*512 -->
+
+        <!-- Google圖標 -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- 自訂圖標 -->
+        <link rel="stylesheet" href="css/iconstyle.css" rel="stylesheet">
+                
+        <!-- 歸零CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- 變數設定CSS -->
+        <link rel="stylesheet" href="css/basic.css">
+        <!-- 版面CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+	<!-- 媒體查詢 -->
+	<link rel="stylesheet" href="css/style_m.css" media="(min-width: 980px) and (max-width: 1239px)">
+	<link rel="stylesheet" href="css/style_s.css" media="(max-width: 979px)">
+
+        <!-- JQ載入 -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+        <!-- gotop JS -->
+        <script src="js/gotop.js"></script>  
+</head>
+
+<body>
+        <!-- 不會改變的資料都用id -->
+        <div class="special"><span>2023超集中比基尼推薦，Muiiswim專為亞洲女生設計</span></div>
+        <div id="header">
+             
+             <div id="logo">
+             <h1 title="Go back to Homepage"><span>Muii Swim</span><a href="index.html"></a></h1>
+             </div>
+
+             <div id="nav">
+                  <!-- 上層固定選單 -->
+                  <nav id="top-nav">
+                        <ul>
+                            <li><a href="#0"><span class="icon-cart" title="shopping car"></span></a></li>
+                            <li><a href="#0"><span class="icon-account" title="membership"></span></a></li>
+                            <li><a href="#0"><span class="icon-search" title="search"></span></a></li>
+                        </ul>
+                   </nav>
+                   
+                   <nav id="main-nav">
+						<!-- 漢堡選單 -->
+						<input type="checkbox" class="toggler">
+						<div class="hamburger"> <!--漢堡三條線-->
+							<div></div>
+						</div>
+                        <!-- 主選單 -->
+						<div class="menu">
+							<div>
+								<div>
+									<ul>
+										<li><a href="about.html">關於我們</a></li>
+										<li><a href="products.html">所有商品</a></li>
+										<li><a href="pick.html" class="highlight_txt">如何挑選</a></li>
+										<li><a href="news.html">海邊生活<span class="material-icons">expand_more</span></a>
+											<ul>
+												<li><a href="news_person.html">人物專訪</a></li>
+												<li><a href="news_special.html">特別企劃</a></li>
+											</ul>
+										<li><a href="stores.html">分店門市</a></li>
+                                                                                
+                                                                                <!-- SNS選單 -->
+										<p id="nav-sns">
+											<a href="https://www.facebook.com/muiiswim/?locale=zh_TW" target="_blank"><span class="icon-facebook"></span></a>
+											<a href="https://www.instagram.com/muiiswim/" target="_blank"><span class="icon-instagram-150"></span></a>
+											<a href="#" target="_blank"><span class="icon-linkedin-150"></span></a>
+											<a href="https://mail.google.com/" target="_blank"><span class="icon-gmail"></span></a>
+										</p>
+									</ul>
+								</div>
+							</div>
+						</div>
+                  </nav>
+             </div>
+        </div>
+
+        <!-- 橫版大圖區塊 -->
+        <div class="hero-image" style="background-image: linear-gradient(rgba(175, 175, 175, 0.3), rgba(78, 78, 78, 0.5)) , url(images/swimsuit_02.jpg);">
+                <div class="hero-text">
+                        <h1 class="font_size-50 line_height-15">Muii Swim</h1>
+                        <p class="margin_bottom-20">Beauty comes in all sizes.</p>
+                        <button>SHOP NOW</button>
+                </div>
+        </div>
+        
+        <!-- 3圖片區塊 -->
+        <div id="main-content">
+            <h2 class="color_dark_grey text_align-center">All Styles | 款式介紹</h2>
+            <div class="features_box">
+                <div class="pic_circle"></div>
+                <div class="pic_circle"></div>
+                <div class="pic_circle"></div>
+            </div>
+			<div class="size_pic">
+					<img src="images/size1.png" alt="">
+					<h4 class="margin_top-50 margin_bottom-20">One Piece | 連身款式</h4>
+					<img src="images/size_suit.png" alt="所有連身款式">
+					<h4 class="margin_top-50 margin_bottom-20">Top | 上衣款式</h4>
+					<img src="images/size_top.png" alt="所有上身款式">
+					<h4 class="margin_top-50 margin_bottom-20">Bottom | 褲子款式</h4>
+					<img src="images/size_bottom.png" alt="所有下身款式">
+			</div>
+        </div>
+
+
+
+        <!-- 頁尾區塊 -->
+        <div id="footer">
+                <!-- logo區域 -->
+                <div id="small-logo"><img src="images/Muii_logo.jpg" alt=""></div>
+                <div id="copyright">
+                        <small>海邊生活工作室<br>聯絡地址：宜蘭縣頭城鎮開蘭東路32號</small>
+                </div>
+
+                <!-- 社群超連結&icon -->
+                <div id="sns">
+                        <a href="https://www.facebook.com/muiiswim/?locale=zh_TW" target="_blank"><span class="icon-facebook"></span></a>
+                        <a href="https://www.instagram.com/muiiswim/" target="_blank"><span class="icon-instagram-150"></span></a>
+                        <a href="#" target="_blank"><span class="icon-linkedin-150"></span></a>
+                        <a href="https://mail.google.com/" target="_blank"><span class="icon-gmail"></span></a>
+                </div>
+
+                <!-- 退換貨政策 -->
+                <div class="submenu">
+                        <ul>
+                                <li><a href="#">退換貨政策</a></li>
+                                <li><a href="#">出貨及付款</a></li>
+                                <li><a href="#">隱私權政策</a></li>
+                                <li><a href="#">常見Q&A</a></li>
+                                <li><a href="#">會員政策</a></li>
+                        </ul>
+                </div>
+
+        </div>
+        <!-- 置頂button -->
+        <div id="gotop">
+                <span class="material-icons">arrow_circle_up</span>
+                <span class="gotip">Go Back To Top</span>
+        </div>
+
+</body>
+
+</html>
